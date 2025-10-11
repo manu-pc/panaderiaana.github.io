@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panadería Ana</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #fffaf6;
+      color: #3c2a1e;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+    .spinner {
+      margin-top: 2rem;
+      width: 36px;
+      height: 36px;
+      border: 3px solid #e3c7a8;
+      border-top-color: #c28a53;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Panadería Ana</h1>
+  <p>nuestro nuevo sitio web estará disponible pronto 🍰</p>
+  <div class="spinner"></div>
+</body>
+</html>
