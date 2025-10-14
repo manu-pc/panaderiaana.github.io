@@ -18,13 +18,9 @@
 
     // Fixed Navbar
     $('.fixed-top').css('top', $('.top-bar').height());
-    $(window).scroll(function () {
-        if ($(this).scrollTop()) {
             $('.fixed-top').addClass('bg-dark').css('top', 0);
-        } else {
-            $('.fixed-top').removeClass('bg-dark').css('top', $('.top-bar').height());
-        }
-    });
+        
+    
     
     
     // Back to top button
