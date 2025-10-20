@@ -122,6 +122,13 @@ h6,
     }
 }
 
+.navbar .navbar-brand h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #6a2400;
+}
+
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
@@ -139,6 +146,10 @@ h6,
         transition: .5s;
         opacity: 1;
     }
+
+
+
+
 }
 
 
@@ -152,6 +163,21 @@ h6,
     display: flex;
     align-items: center;
     background: rgba(0, 0, 0, .5);
+}
+
+.header-carousel .fixed-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.header-carousel .fixed-overlay .btn {
+    pointer-events: auto;
 }
 
 @media (max-width: 768px) {
@@ -172,6 +198,7 @@ h6,
     }
 }
 
+/*** Carousel nav arrows ***/
 .header-carousel .owl-nav {
     position: relative;
     width: 80px;
@@ -207,6 +234,7 @@ h6,
     color: var(--dark);
 }
 
+/*** Page Header Background ***/
 .page-header {
     margin-bottom: 6rem;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousel-1.jpg) center center no-repeat;
@@ -216,6 +244,7 @@ h6,
 .breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
+
 
 
 /*** Facts ***/
@@ -415,4 +444,3 @@ h6,
 .copyright a:hover {
     color: var(--light);
 }
-
