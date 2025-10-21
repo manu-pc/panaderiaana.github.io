@@ -153,48 +153,76 @@ h6,
 }
 
 
-/*** Header ***/
-.header-carousel .owl-carousel-inner {
-    position: absolute;
+/* carousel container + items */
+:root {
+    --header-carousel-max-height: clamp(350px, 80vh, 1024px);
+}
+
+/* apply the cap */
+.header-carousel .owl-stage-outer,
+.header-carousel .owl-stage,
+.header-carousel .owl-carousel-item {
+    height: var(--header-carousel-max-height);
+}
+
+/* images fill the item and are cropped via object-fit */
+.header-carousel .owl-carousel-item img {
+    display: block;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    background: rgba(0, 0, 0, .5);
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
 }
 
-.header-carousel .fixed-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    pointer-events: none;
+/* limit how big the carousel can become in absolute terms */
+:root {
+    --header-carousel-max-height: 800px;
+    /* tweak this cap as you like */
 }
 
-.header-carousel .fixed-overlay .btn {
-    pointer-events: auto;
+/* overlay content: allow it to get closer to edges before wrapping */
+.overlay-content {
+    padding-inline: clamp(10px, 6vw, 80px);
+    /* left/right padding adapts */
+    width: min(92%, 1200px);
+    box-sizing: border-box;
 }
 
+/* tune heading and paragraph responsiveness so they keep single-line longer */
+.overlay-content h1 {
+    margin: 0 0 .5rem;
+    line-height: 1;
+    font-size: clamp(28px, 8vw, 96px);
+    /* responsive scale */
+    word-break: keep-all;
+}
+
+.overlay-content p {
+    margin: 0 0 1rem;
+    font-size: clamp(14px, 2.2vw, 20px);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.overlay-content h1,
+.overlay-content p {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* mobile adjustments (your previous rules kept but made flexible) */
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
-        position: relative;
-        min-height: 600px;
+        min-height: 0;
     }
 
     .header-carousel .owl-carousel-item img {
-        position: absolute;
-        width: 100%;
+        /* let js still control final height; avoid fixed pixel heights here */
         height: 100%;
-        object-fit: cover;
+        width: 100%;
     }
 
-    .header-carousel .owl-carousel-item p {
-        font-size: 16px !important;
+    .overlay-content {
+        padding-inline: clamp(8px, 4vw, 32px);
     }
 }
 
@@ -237,7 +265,7 @@ h6,
 /*** Page Header Background ***/
 .page-header {
     margin-bottom: 6rem;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/stgmz.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -276,9 +304,20 @@ h6,
 
 /*** Product ***/
 .product-item {
+    position: relative;
     transition: .5s;
+    overflow: hidden;
 }
 
+/* force square aspect ratio */
+.product-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+/* hover effects */
 .product-item:hover {
     background: var(--primary) !important;
 }
@@ -291,12 +330,10 @@ h6,
     border-color: var(--light) !important;
 }
 
+/* overlay */
 .product-item .product-overlay {
     position: absolute;
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,7 +344,6 @@ h6,
 }
 
 .product-item:hover .product-overlay {
-    height: 100%;
     opacity: 1;
 }
 
