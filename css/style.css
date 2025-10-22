@@ -189,12 +189,10 @@ h6,
     box-sizing: border-box;
 }
 
-/* tune heading and paragraph responsiveness so they keep single-line longer */
 .overlay-content h1 {
     margin: 0 0 .5rem;
     line-height: 1;
     font-size: clamp(28px, 8vw, 96px);
-    /* responsive scale */
     word-break: keep-all;
 }
 
@@ -209,14 +207,12 @@ h6,
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-/* mobile adjustments (your previous rules kept but made flexible) */
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         min-height: 0;
     }
 
     .header-carousel .owl-carousel-item img {
-        /* let js still control final height; avoid fixed pixel heights here */
         height: 100%;
         width: 100%;
     }
@@ -274,6 +270,15 @@ h6,
 }
 
 
+.page-header h1,
+.page-header p,
+.page-header .breadcrumb,
+.page-header .breadcrumb a {
+    color: #fff;
+    /* make all header text white */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    /* add black shadow */
+}
 
 /*** Facts ***/
 .fact-item {
@@ -479,4 +484,18 @@ h6,
 
 .copyright a:hover {
     color: var(--light);
+}
+
+.img-square {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
