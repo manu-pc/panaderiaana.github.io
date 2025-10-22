@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #EAA636;
+    --primary: #872806;
     --secondary: #545454;
     --light: #FDF5EB;
     --dark: #1E1916;
@@ -126,7 +126,7 @@ h6,
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #6a2400;
+    color: #872806;
 }
 
 @media (min-width: 992px) {
@@ -152,20 +152,30 @@ h6,
 
 }
 
-
-/* carousel container + items */
+/*** carousel - laufey ***/
 :root {
-    --header-carousel-max-height: clamp(350px, 80vh, 1024px);
+    --header-carousel-max-height: 800px;
 }
 
-/* apply the cap */
 .header-carousel .owl-stage-outer,
 .header-carousel .owl-stage,
 .header-carousel .owl-carousel-item {
     height: var(--header-carousel-max-height);
 }
 
-/* images fill the item and are cropped via object-fit */
+.header-carousel .owl-carousel-item {
+    position: relative;
+}
+
+.header-carousel .owl-carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    z-index: 1;
+}
+
 .header-carousel .owl-carousel-item img {
     display: block;
     width: 100%;
@@ -175,16 +185,9 @@ h6,
     max-width: 100%;
 }
 
-/* limit how big the carousel can become in absolute terms */
-:root {
-    --header-carousel-max-height: 800px;
-    /* tweak this cap as you like */
-}
-
-/* overlay content: allow it to get closer to edges before wrapping */
 .overlay-content {
+    z-index: 2;
     padding-inline: clamp(10px, 6vw, 80px);
-    /* left/right padding adapts */
     width: min(92%, 1200px);
     box-sizing: border-box;
 }
@@ -199,12 +202,12 @@ h6,
 .overlay-content p {
     margin: 0 0 1rem;
     font-size: clamp(14px, 2.2vw, 20px);
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
 .overlay-content h1,
 .overlay-content p {
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
 @media (max-width: 768px) {
@@ -221,6 +224,7 @@ h6,
         padding-inline: clamp(8px, 4vw, 32px);
     }
 }
+
 
 /*** Carousel nav arrows ***/
 .header-carousel .owl-nav {
@@ -274,10 +278,8 @@ h6,
 .page-header p,
 .page-header .breadcrumb,
 .page-header .breadcrumb a {
-    color: #fff;
-    /* make all header text white */
+    color: #ffffff;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-    /* add black shadow */
 }
 
 /*** Facts ***/

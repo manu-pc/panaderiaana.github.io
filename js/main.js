@@ -18,7 +18,7 @@
 
     // Fixed Navbar
     $('.fixed-top').css('top', $('.top-bar').height());
-            $('.fixed-top').addClass('bg-dark').css('top', 0);
+            $('.fixed-top').addClass('bg-gold').css('top', 0);
         
     
     
