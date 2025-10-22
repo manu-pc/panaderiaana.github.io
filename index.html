@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <title>Panadería Ana</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -26,20 +24,18 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!-- Lightbox2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
@@ -58,10 +54,11 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Especialidades</a>
                     <div class="dropdown-menu m-0">
                         <a href="tartadequeso.html" class="dropdown-item">Tarta de queso</a>
-                        <a href="larpeira.html" class="dropdown-item">Tarta de Santiago</a>
-                        <a href="tartadesantiago.html" class="dropdown-item">Panes especiales</a>
+                        <a href="tartadesantiago.html" class="dropdown-item">Tarta de Santiago</a>
+                        <span class="dropdown-item text-muted">Próximamente más</span>
                     </div>
                 </div>
+
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
             <div class=" d-none d-lg-flex">
@@ -76,43 +73,44 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
     <!-- Carousel Start -->
     <div class="container-fluid p-0 pb-5 wow fadeIn position-relative" data-wow-delay="0.1s">
-        <!-- Carousel Images -->
         <div class="owl-carousel header-carousel">
-            <!-- Imagen 1 -->
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid w-100" src="img/stgmz.jpg" alt="">
+                <a href="img/stgmz.jpg" data-lightbox="galeria" data-title="Tarta de Santiago">
+                    <img class="img-fluid w-100" src="img/stgmz.jpg" alt="">
+                </a>
             </div>
-
-            <!-- Imagen 2 -->
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid w-100" src="img/bolos.jpeg" alt="">
+                <a href="img/bolos.jpeg" data-lightbox="galeria" data-title="Bolos artesanos">
+                    <img class="img-fluid w-100" src="img/bolos.jpeg" alt="">
+                </a>
             </div>
-
-            <!-- Imagen 3 -->
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid w-100" src="img/bolos_2.jpeg" alt="">
+                <a href="img/bolos_2.jpeg" data-lightbox="galeria" data-title="Bollería variada">
+                    <img class="img-fluid w-100" src="img/bolos_2.jpeg" alt="">
+                </a>
             </div>
-
-            <!-- Imagen 4 -->
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid w-100" src="img/barros.jpeg" alt="">
+                <a href="img/barros.jpeg" data-lightbox="galeria" data-title="Pan artesano">
+                    <img class="img-fluid w-100" src="img/barros.jpeg" alt="">
+                </a>
             </div>
-
-            <!-- Imagen 5 -->
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid w-100" src="img/panpasas.jpeg" alt="">
+                <a href="img/panpasas.jpeg" data-lightbox="galeria" data-title="Pan con pasas">
+                    <img class="img-fluid w-100" src="img/panpasas.jpeg" alt="">
+                </a>
             </div>
-
-            <!-- Imagen 6 -->
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid w-100" src="img/queixo.jpg" alt="">
+                <a href="img/queixo.jpg" data-lightbox="galeria" data-title="Tarta de queso">
+                    <img class="img-fluid w-100" src="img/queixo.jpg" alt="">
+                </a>
             </div>
-
-            <!-- Imagen 7 -->
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid w-100" src="img/pasteles.jpeg" alt="">
+                <a href="img/pasteles.jpeg" data-lightbox="galeria" data-title="Pasteles caseros">
+                    <img class="img-fluid w-100" src="img/pasteles.jpeg" alt="">
+                </a>
             </div>
         </div>
 
@@ -123,9 +121,7 @@
             <a href="#producto" class="btn btn-primary rounded-pill py-3 px-5">Leer más</a>
         </div>
     </div>
-
     <!-- Carousel End -->
-
 
     <!-- About Start -->
     <div id="producto" class="container-xxl py-6">
@@ -134,10 +130,14 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="row img-twice position-relative h-100">
                         <div class="col-6">
-                            <img class="img-fluid rounded" src="img/queixo_f1.jpg" alt="">
+                            <a href="img/queixo_f1.jpg" data-lightbox="galeria" data-title="Tarta de queso artesanal">
+                                <img class="img-fluid rounded" src="img/queixo_f1.jpg" alt="">
+                            </a>
                         </div>
                         <div class="col-6 align-self-end">
-                            <img class="img-fluid rounded" src="img/pastelnata2.jpg" alt="">
+                            <a href="img/pastelnata2.jpg" data-lightbox="galeria" data-title="Pastel de nata">
+                                <img class="img-fluid rounded" src="img/pastelnata2.jpg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -145,32 +145,14 @@
                     <div class="h-100">
                         <p class="text-primary text-uppercase mb-2">// Nuestro producto</p>
                         <h1 class="display-6 mb-4">Artesano, con los mejores ingredientes.</h1>
-                        <p>Elaboramos cada uno de nuestros productos como se han hecho toda la vida. De forma
-                            artesanal,
-                            cuidando todo detalle desde la masa hasta el horneado.
-                        </p>
-                        <p>Todos nuestros panes, bollería y pasteles se preparan con ingredientes de la más alta
-                            calidad,
-                            seleccionados cuidadosamente en recetas perfeccionadas a lo largo de años de
-                            experiencia,
-                            para
-                            que cada bocado sea inolvidable.
-                        </p>
+                        <p>Elaboramos cada uno de nuestros productos como se han hecho toda la vida...</p>
                         <div class="row g-2 mb-4">
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Bollería y hojaldre
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Panes variados
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Tartas y pasteles
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Empanadas y pizzas
-                            </div>
+                            <div class="col-sm-6"><i class="fa fa-check text-primary me-2"></i>Bollería y hojaldre</div>
+                            <div class="col-sm-6"><i class="fa fa-check text-primary me-2"></i>Panes variados</div>
+                            <div class="col-sm-6"><i class="fa fa-check text-primary me-2"></i>Tartas y pasteles</div>
+                            <div class="col-sm-6"><i class="fa fa-check text-primary me-2"></i>Empanadas y pizzas</div>
                         </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="nosotros.html">Ver más</a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="producto.html">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -181,91 +163,71 @@
     <!-- Product Start -->
     <div class="container-xxl bg-light my-6 py-6 pt-0">
         <div class="container">
-            <div class="bg-primary text-light rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="row g-4 align-items-center">
-                    <div class="col-lg-6">
-                        <h1 class="display-4 text-light mb-0">¿Qué te apetece?</h1>
-                    </div>
-                    <div class="col-lg-6 text-lg-end">
-                        <div class="d-inline-flex align-items-center text-start">
-                            <i class="fa fa-phone-alt fa-4x flex-shrink-0"></i>
-                            <div class="ms-4">
-                                <p class="fs-5 fw-bold mb-0">Encargos:</p>
-                                <p class="fs-1 fw-bold mb-0">+34 602 547 602</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="text-primary text-uppercase mb-2">// Especialidades</p>
                 <h1 class="display-6 mb-4">Sabores artesanos, de nuestro obrador para el mundo.</h1>
             </div>
             <div class="row g-4">
+                <!-- Tarta de Santiago -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                         <div class="text-center p-4">
-                            <div class="d-inline-block border border-primary rounded-pill px-3 mb-3">Tradición
-                                gallega
+                            <div class="d-inline-block border border-primary rounded-pill px-3 mb-3">
+                                Tradición gallega
                             </div>
                             <h3 class="mb-3">Tarta de Santiago</h3>
-                            <span>Tradición gallega en cada bocado. Elaborada siguiendo la receta clásica que
-                                mantiene
-                                vivo el sabor auténtico de Galicia.</span>
+                            <span>Tradición gallega en cada bocado...</span>
                         </div>
                         <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/stg.jpeg" alt="">
+                            <a href="img/stg.jpeg" data-lightbox="galeria" data-title="Tarta de Santiago">
+                                <img class="img-fluid" src="img/stg.jpeg" alt="Tarta de Santiago">
+                            </a>
                             <div class="product-overlay">
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
-                                        class="fa fa-eye text-primary"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle"
+                                    href="tartadesantiago.html">
+                                    <i class="fa fa-eye text-primary"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Tarta de queso -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                         <div class="text-center p-4">
-                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">La más dulce
-                                </div>
-                            <h4 class="mb-3">Larpeira</h4>
-                            <span>Su textura esponjosa, el aroma a anís y el toque de azúcar caramelizado hacen de cada
-                                bocado una auténtica experiencia gallega.</span>
-
+                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">
+                                Cremosa y artesana
+                            </div>
+                            <h3 class="mb-3">Tarta de queso</h3>
+                            <span>Cremosa, suave y horneada lentamente...</span>
                         </div>
                         <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/larpeira.jpeg" alt="">
+                            <a href="img/queixo_3.jpeg" data-lightbox="galeria" data-title="Tarta de queso">
+                                <img class="img-fluid" src="img/queixo_3.jpeg" alt="Tarta de queso">
+                            </a>
                             <div class="product-overlay">
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
-                                        class="fa fa-eye text-primary"></i></a>
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="tartadequeso.html">
+                                    <i class="fa fa-eye text-primary"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Próximamente más -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
-                        <div class="text-center p-4">
-                            <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3">Cremosa y
-                                artesana
-                            </div>
-                            <h3 class="mb-3">Tarta de queso</h3>
-                            <span>Cremosa, suave y horneada lentamente en nuestro obrador. Un equilibrio perfecto
-                                entre
-                                textura y sabor.</span>
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/queixo_3.jpeg" alt="">
-                            <div class="product-overlay">
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
-                                        class="fa fa-eye text-primary"></i></a>
-                            </div>
-                        </div>
+                    <div
+                        class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100 justify-content-center align-items-center text-center p-4 border border-dashed border-secondary">
+                        <i class="fa fa-hourglass-half fa-3x text-secondary mb-3"></i>
+                        <h3 class="mb-2 text-secondary">Próximamente más</h3>
+                        <p class="text-muted mb-0">Estamos horneando nuevas delicias...</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Product End -->
-
 
     <!-- Service Start -->
     <div class="container-xxl py-6">
@@ -274,47 +236,37 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="text-primary text-uppercase mb-2">// Nuestros servicios</p>
                     <h1 class="display-6 mb-4">¿Qué te podemos ofrecer?</h1>
-                    <p class="mb-5">Productos artesanales, descansos acogedores, momentos inolvidables...
-
-                    </p>
+                    <p class="mb-5">Productos artesanales, descansos acogedores, momentos inolvidables... </p>
                     <div class="row gy-5 gx-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-bread-slice text-white"></i>
-                                </div>
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"> <i
+                                        class="fa fa-bread-slice text-white"></i> </div>
                                 <h5 class="mb-0">Productos de calidad</h5>
-                            </div>
-                            <span>Pan, bollería, pasteles... Para cualquier comida del día.</span>
+                            </div> <span>Pan, bollería, pasteles... Para cualquier comida del día.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-birthday-cake text-white"></i>
-                                </div>
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"> <i
+                                        class="fa fa-birthday-cake text-white"></i> </div>
                                 <h5 class="mb-0">Productos personalizados</h5>
-                            </div>
-                            <span>Encargos de tartas de cumpleaños personalizadas para una persona especial.</span>
+                            </div> <span>Encargos de tartas de cumpleaños personalizadas para una persona
+                                especial.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-coffee text-white"></i>
-                                </div>
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"> <i
+                                        class="fa fa-coffee text-white"></i> </div>
                                 <h5 class="mb-0">Cafetería</h5>
-                            </div>
-                            <span>Disfruta de nuestros mejores productos mientras tomas el café, para empezar bien
-                                el
-                                día.</span>
+                            </div> <span>Disfruta de nuestros mejores productos mientras tomas el café, para empezar
+                                bien el día.</span>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                             <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                    <i class="fa fa-truck text-white"></i>
-                                </div>
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"> <i
+                                        class="fa fa-truck text-white"></i> </div>
                                 <h5 class="mb-0">Ventas al por mayor</h5>
-                            </div>
-                            <span>Únete a los bares, supermercados y restaurantes locales que ya confían en
+                            </div> <span>Únete a los bares, supermercados y restaurantes locales que ya confían en
                                 nosotros.</span>
                         </div>
                     </div>
@@ -322,88 +274,21 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row img-twice position-relative h-100">
                         <div class="col-6">
-                            <img class="img-fluid rounded" src="img/cafe.jpeg" alt="">
+                            <a href="img/cafe.jpeg" data-lightbox="galeria" data-title="Café y bollería">
+                                <img class="img-fluid rounded" src="img/cafe.jpeg" alt="">
+                            </a>
                         </div>
                         <div class="col-6 align-self-end">
-                            <img class="img-fluid rounded" src="img/pastelselva.jpeg" alt="">
+                            <a href="img/pastelselva.jpeg" data-lightbox="galeria" data-title="Pastel Selva Negra">
+                                <img class="img-fluid rounded" src="img/pastelselva.jpeg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
+    </div> <!-- Service End -->
 
-    <!-- About Us Start -->
-    <div id="historia" class="container-xxl py-6 bg-light">
-        <div class="container">
-            <div class="row align-items-center g-5">
-
-                <!-- Columna izquierda: contador de años -->
-                <div class="col-lg-5 text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="fact-item bg-white rounded shadow-sm p-5 d-inline-block">
-                        <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
-                        <p class="mb-2 text-secondary">Años abiertos</p>
-                        <h1 class="display-4 mb-0 text-dark" data-toggle="counter-up">11</h1>
-                    </div>
-                </div>
-
-                <!-- Columna derecha: texto y botón -->
-                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
-                    <p class="text-primary text-uppercase mb-2">// Sobre nosotros</p>
-                    <h1 class="display-6 mb-3">Más de una década en el corazón de Cee</h1>
-                    <p class="mb-3">
-                        Desde nuestros comienzos haciendo pan para repartir desde nuestro hogar, hemos mantenido
-                        el espíritu artesanal que nos define. Cada día trabajamos con pasión y dedicación
-                        para ofrecer panes y dulces que conservan el sabor auténtico de lo hecho a mano.
-                    </p>
-                    <p class="mb-4">
-                        Nuestra historia está unida a la de muchas familias que confían en nosotros desde hace
-                        generaciones. Conoce cómo empezó todo y cómo seguimos creciendo sin perder nuestras raíces.
-                    </p>
-                    <a class="btn btn-outline-primary rounded-pill py-3 px-5" href="historia.html">
-                        Leer más
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- About Us End -->
-
-
-    <!-- Instagram Start -->
-    <div class="container-xxl py-6 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Reel de Instagram -->
-                <div class="col-lg-6 text-center mb-4 mb-lg-0 wow fadeIn" data-wow-delay="0.1s">
-                    <blockquote class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/p/DP60LxtiGzD/?utm_source=ig_embed"
-                        data-instgrm-version="14"
-                        style="background:#FFF; border:0; margin:0 auto; max-width:540px; width:100%; border-radius:15px; overflow:hidden;">
-                    </blockquote>
-                    <script async src="//www.instagram.com/embed.js"></script>
-                </div>
-
-                <!-- Texto y enlace -->
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
-                    <p class="text-primary text-uppercase mb-2">// Síguenos en Instagram</p>
-                    <h1 class="display-6 mb-4">Descubre nuestro día a día en el obrador</h1>
-                    <p class="mb-4">
-                        Pan recién hecho, dulces artesanos y momentos que huelen a hogar.<br>
-                        Síguenos para ver cómo elaboramos nuestros productos y mantenerte al tanto de las novedades.
-                    </p>
-
-                    <a href="https://www.instagram.com/panaderia.ana/" target="_blank"
-                        class="btn btn-primary py-3 px-5 rounded-pill wow fadeInUp" data-wow-delay="0.5s">
-                        <i class="fab fa-instagram me-2"></i> Ver cuenta en Instagram
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Instagram End -->
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">

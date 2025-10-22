@@ -499,3 +499,37 @@ h6,
     height: 100%;
     object-fit: cover;
 }
+
+.horario {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.horario h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.horario table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.horario td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.horario td:first-child {
+    font-weight: 600;
+}
+
+.horario td.cerrado {
+    color: #c00;
+    font-style: italic;
+}
