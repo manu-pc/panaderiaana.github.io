@@ -1,0 +1,52 @@
+quiero que refactorices y ordenes completamente este proyecto web hecho en html + bootstrap siguiendo criterios profesionales de mantenibilidad, consistencia y simplicidad.
+
+objetivos principales:
+
+1. limpiar y corregir html:
+
+* corregir sintaxis no estándar o inválida.
+* asegurar estructura semántica correcta (header, nav, main, section, footer, etc cuando aplique).
+* eliminar etiquetas innecesarias o redundantes.
+* evitar estilos inline.
+* mejorar accesibilidad básica (alt en imágenes, jerarquía de headings coherente).
+
+2. reorganizar archivos y recursos:
+
+* proponer y aplicar una estructura de carpetas clara (por ejemplo: /css, /js, /img, /assets).
+* renombrar imágenes con nombres descriptivos y consistentes.
+* actualizar todas las rutas en consecuencia.
+
+3. refactorizar css:
+
+* eliminar reglas duplicadas o sin uso.
+* unificar estilos repetidos.
+* definir variables css (:root) para todos los colores usados con nombres claros (por ejemplo --color-primary, --color-accent, --color-bg-section, etc).
+* eliminar colores hardcodeados cuando sea posible.
+* reducir longitud del css manteniendo el mismo diseño visual.
+* separar responsabilidades y agrupar reglas por componentes.
+
+4. sistema de clases:
+
+* crear una clase reutilizable tipo .section (o equivalente) que gestione espaciado, fondo y layout base de secciones.
+* introducir clases utilitarias coherentes cuando tenga sentido.
+* aumentar el uso de clases en lugar de selectores frágiles.
+* mantener compatibilidad con bootstrap sin duplicar lo que bootstrap ya resuelve.
+
+5. consistencia visual:
+
+* mantener el aspecto actual lo más fiel posible salvo que haya inconsistencias claras.
+* normalizar tipografías, márgenes y espaciados.
+
+6. comentarios:
+
+* eliminar comentarios innecesarios o ruido.
+* dejar solo comentarios mínimos y útiles para organización (por ejemplo separadores de secciones en css).
+
+7. salida esperada:
+
+* mostrar árbol final de directorios.
+* mostrar archivos refactorizados completos.
+* explicar brevemente decisiones importantes o cambios estructurales.
+
+prioriza código limpio, legible y fácil de mantener sobre soluciones rápidas.
+

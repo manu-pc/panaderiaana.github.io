@@ -1,9 +1,46 @@
 /********** Template CSS **********/
 :root {
-    --primary: #872806;
-    --secondary: #545454;
-    --light: #FDF5EB;
-    --dark: #1E1916;
+    /* Brand colors - Panadería Ana */
+    --primary: #872806;     
+    --gold: #cb8c34;        
+    --secondary: #C47A4E;    
+
+    /* Neutral colors */
+    --white: #ffffff;
+    --black: #111111;
+    --light: #FDF5EB;        /* Cream - light backgrounds */
+    --dark: #1E1916;         /* Near-black - dark backgrounds */
+    --grey-light: #fafafa;
+    --grey-border: #dddddd;
+    --grey-text: #545454;    /* Gray for muted text */
+
+    /* Utility colors */
+    --error: #cc0000;
+}
+
+/* Brand color overrides (ensure consistency with Bootstrap) */
+.bg-gold {
+    background-color: var(--gold) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--grey-text) !important;
 }
 
 h4,
@@ -56,7 +93,7 @@ h6,
 }
 
 .btn.btn-primary {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .btn-square {
@@ -122,11 +159,9 @@ h6,
     }
 }
 
-.navbar .navbar-brand h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #872806;
+.navbar .navbar-brand h1,
+.navbar .navbar-brand .brand-name {
+    color: var(--primary);
 }
 
 @media (min-width: 992px) {
@@ -202,7 +237,6 @@ h6,
 .overlay-content p {
     margin: 0 0 1rem;
     font-size: clamp(14px, 2.2vw, 20px);
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
 .overlay-content h1,
@@ -244,7 +278,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: #FFFFFF;
+    background: var(--white);
     transform: rotate(45deg);
 }
 
@@ -278,7 +312,7 @@ h6,
 .page-header p,
 .page-header .breadcrumb,
 .page-header .breadcrumb a {
-    color: #ffffff;
+    color: var(--white);
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
@@ -289,7 +323,7 @@ h6,
 
 .fact-item:hover {
     margin-top: -10px;
-    background: #FFFFFF !important;
+    background: var(--white) !important;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
 
@@ -418,7 +452,7 @@ h6,
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item * {
-    color: #FFFFFF !important;
+    color: var(--white) !important;
 }
 
 .testimonial-carousel .owl-nav {
@@ -477,7 +511,7 @@ h6,
 }
 
 .copyright {
-    background: #111111;
+    background: var(--black);
 }
 
 .copyright a {
@@ -506,7 +540,7 @@ h6,
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
-    background: #fafafa;
+    background: var(--grey-light);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     font-family: "Segoe UI", Tahoma, sans-serif;
@@ -524,7 +558,7 @@ h6,
 
 .horario td {
     padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--grey-border);
 }
 
 .horario td:first-child {
@@ -532,6 +566,26 @@ h6,
 }
 
 .horario td.cerrado {
-    color: #c00;
+    color: var(--error);
     font-style: italic;
+}
+
+
+/*** Utility Classes ***/
+.text-gold { color: var(--gold); }
+.lh-relaxed { line-height: 1.6; }
+.z-10 { z-index: 10; }
+.max-w-500 { max-width: 500px; }
+.max-w-800 { max-width: 800px; }
+
+/* Section spacing */
+.section { padding-top: 4rem; padding-bottom: 4rem; }
+.section-lg { padding-top: 6rem; padding-bottom: 6rem; }
+
+/* Brand name in navbar */
+.brand-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2.0em;;
+    letter-spacing: 1px;
 }

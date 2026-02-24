@@ -1,15 +1,19 @@
 /******* Customized Bootstrap ********/
+/* Note: These SCSS variables are for compilation.
+   Runtime colors are defined as CSS variables in css/style.css */
 
-$primary: #872806;
-$secondary: #545454;
-$light: #FDF5EB;
-$dark: #1E1916;
+$primary: #872806;      /* Salsa red */
+$secondary: #C47A4E;    /* Maple syrup */
+$light: #FDF5EB;        /* Cream */
+$dark: #1E1916;         /* Near-black */
+$gold: #cb8c34;         /* Gold ocher - for .bg-gold */
+$grey-text: #545454;    /* Gray text */
 
 $font-family-base: 'Roboto', sans-serif;
 
-$headings-font-family: 'Playfair Display', serif;
+$headings-font-family: 'Poppins', sans-serif;
 
-$body-color: $secondary;
+$body-color: $grey-text;
 
 $headings-color: $dark;
 
