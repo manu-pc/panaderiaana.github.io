@@ -584,7 +584,7 @@ h6,
 
 /* Brand name in navbar */
 .brand-name {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; !important
     font-weight: 500;
     font-size: 2.0em;;
     letter-spacing: 1px;
