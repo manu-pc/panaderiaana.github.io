@@ -1,52 +1,99 @@
-quiero que refactorices y ordenes completamente este proyecto web hecho en html + bootstrap siguiendo criterios profesionales de mantenibilidad, consistencia y simplicidad.
+Tengo una página web estática en español compuesta por varios archivos HTML en la raíz del proyecto.
 
-objetivos principales:
+Quiero convertirla en una web multilingüe (español, inglés y gallego) con buena estructura SEO internacional y selector de idioma visible con iconos de banderas.
 
-1. limpiar y corregir html:
+Realiza lo siguiente:
 
-* corregir sintaxis no estándar o inválida.
-* asegurar estructura semántica correcta (header, nav, main, section, footer, etc cuando aplique).
-* eliminar etiquetas innecesarias o redundantes.
-* evitar estilos inline.
-* mejorar accesibilidad básica (alt en imágenes, jerarquía de headings coherente).
+1. REESTRUCTURACIÓN DE CARPETAS
 
-2. reorganizar archivos y recursos:
+- Mueve todos los HTML actuales (español) a una carpeta /es
+- Crea carpetas adicionales:
+  /en
+  /gl
 
-* proponer y aplicar una estructura de carpetas clara (por ejemplo: /css, /js, /img, /assets).
-* renombrar imágenes con nombres descriptivos y consistentes.
-* actualizar todas las rutas en consecuencia.
+- Mantén la misma estructura de archivos en cada idioma.
+- Si existen carpetas como /css, /js, /img, déjalas compartidas en la raíz.
 
-3. refactorizar css:
+Estructura final esperada:
 
-* eliminar reglas duplicadas o sin uso.
-* unificar estilos repetidos.
-* definir variables css (:root) para todos los colores usados con nombres claros (por ejemplo --color-primary, --color-accent, --color-bg-section, etc).
-* eliminar colores hardcodeados cuando sea posible.
-* reducir longitud del css manteniendo el mismo diseño visual.
-* separar responsabilidades y agrupar reglas por componentes.
+/
+  /es
+    index.html
+    pagina2.html
+  /en
+    index.html
+    pagina2.html
+  /gl
+    index.html
+    pagina2.html
+  /css
+  /js
+  /img
 
-4. sistema de clases:
+2. TRADUCCIÓN
 
-* crear una clase reutilizable tipo .section (o equivalente) que gestione espaciado, fondo y layout base de secciones.
-* introducir clases utilitarias coherentes cuando tenga sentido.
-* aumentar el uso de clases en lugar de selectores frágiles.
-* mantener compatibilidad con bootstrap sin duplicar lo que bootstrap ya resuelve.
+- Traduce todo el contenido visible al usuario al inglés y al gallego.
+- NO traduzcas:
+  - rutas
+  - nombres de clases
+  - ids
+  - scripts
+  - metadatos técnicos no visibles
 
-5. consistencia visual:
+- Mantén el significado natural y profesional (no traducción literal robótica).
+- Mantén correctamente acentos y caracteres especiales.
+- Conserva la indentación y formato limpio del HTML.
 
-* mantener el aspecto actual lo más fiel posible salvo que haya inconsistencias claras.
-* normalizar tipografías, márgenes y espaciados.
+3. SEO INTERNACIONAL (MUY IMPORTANTE)
 
-6. comentarios:
+En cada archivo HTML:
 
-* eliminar comentarios innecesarios o ruido.
-* dejar solo comentarios mínimos y útiles para organización (por ejemplo separadores de secciones en css).
+- Añade atributo correcto en <html>:
+  Español: <html lang="es">
+  Inglés:  <html lang="en">
+  Gallego: <html lang="gl">
 
-7. salida esperada:
+- Añade dentro de <head> las etiquetas hreflang cruzadas:
 
-* mostrar árbol final de directorios.
-* mostrar archivos refactorizados completos.
-* explicar brevemente decisiones importantes o cambios estructurales.
+Ejemplo para /es/index.html:
 
-prioriza código limpio, legible y fácil de mantener sobre soluciones rápidas.
+<link rel="alternate" hreflang="es" href="https://midominio.com/es/" />
+<link rel="alternate" hreflang="en" href="https://midominio.com/en/" />
+<link rel="alternate" hreflang="gl" href="https://midominio.com/gl/" />
+<link rel="alternate" hreflang="x-default" href="https://midominio.com/es/" />
 
+- Añade canonical correcto para cada idioma.
+- Traduce también:
+  - <title>
+  - <meta name="description">
+  - textos ALT de imágenes
+
+4. SELECTOR DE IDIOMA CON BANDERAS
+
+Añade en el header un selector visible con iconos de banderas, usando los .svg correctos de bandera que hay en /img/.
+
+
+Requisitos:
+- Que mantenga la misma página al cambiar idioma.
+  Ejemplo:
+    /es/pagina2.html
+    /en/pagina2.html
+    /gl/pagina2.html
+
+- Usa rutas relativas correctas.
+- No uses JavaScript para cambiar idioma (solo enlaces normales).
+- Añade atributo hreflang también en los enlaces del selector.
+
+5. CALIDAD Y LIMPIEZA
+
+- Devuélveme:
+  1) Nueva estructura de carpetas
+  2) Un ejemplo completo de un archivo index.html en los tres idiomas
+  3) Lista de cambios realizados
+  4) Posibles mejoras SEO adicionales
+
+- No rompas rutas existentes.
+- No elimines scripts ni estilos.
+- No simplifiques contenido.
+
+Trabaja como un desarrollador senior especializado en SEO técnico internacional y arquitectura web limpia.
