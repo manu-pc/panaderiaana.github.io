@@ -1,0 +1,386 @@
+{
+  "site": {
+    "brand": "Panadería Ana",
+    "tagline": "Artisan bakery and pastry shop in Cee (A Coruña). Bread, pastries, cakes and empanadas, handmade in-house.",
+    "ordersLabel": "Orders",
+    "backToTop": "Back to top",
+    "langNames": { "es": "Español", "en": "English", "gl": "Galego" }
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "specialties": "Specialties",
+    "cheesecake": "Cheesecake",
+    "santiago": "Tarta de Santiago",
+    "larpeira": "Larpeira",
+    "tartagallega": "Galician Cake",
+    "soon": "More coming soon",
+    "new": "NEW",
+    "menu": "Menu",
+    "language": "Language"
+  },
+  "footer": {
+    "visit": "Come visit us!",
+    "tagline": "We welcome you with the aroma of freshly baked bread and the taste of handmade goodness.",
+    "contact": "Contact",
+    "copyright": "© {year} Panadería y Pastelería Ana · All rights reserved",
+    "designedBy": "Designed and developed by"
+  },
+  "pages": {
+    "index": {
+      "title": "Panadería Ana | Artisan bread and pastry in Cee",
+      "description": "Artisan bakery and pastry shop in Cee (A Coruña). Bread, pastries, cakes and empanadas, handmade in-house.",
+      "hero": {
+        "title": "Panadería Ana",
+        "subtitle": "Artisan products. Handmade with care.",
+        "cta": "Read more",
+        "prev": "Previous",
+        "next": "Next",
+        "slides": [
+          { "img": "barros", "alt": "Traditional Galician empanada" },
+          { "img": "bolos", "alt": "Freshly baked handcrafted buns" },
+          { "img": "bolos_2", "alt": "Assorted handcrafted pastries" },
+          { "img": "stgmz", "alt": "Tarta de Santiago with cross" },
+          { "img": "panpasas", "alt": "Homemade raisin bread" },
+          { "img": "queixo", "alt": "Artisan cheesecake" },
+          { "img": "pasteles", "alt": "Assorted homemade cakes" }
+        ]
+      },
+      "about": {
+        "eyebrow": "Our products",
+        "title": "Handcrafted with the finest ingredients.",
+        "text": "We make each of our products the way they have always been made, with time, care and carefully selected ingredients.",
+        "points": ["Pastries and puff pastry", "Assorted breads", "Cakes and pastries", "Pies and pizzas"],
+        "cta": "See more",
+        "img1Alt": "Artisan cheesecake",
+        "img2Alt": "Homemade custard pastry"
+      },
+      "specialties": {
+        "eyebrow": "Specialties",
+        "title": "Artisan flavours, from our bakehouse to the world.",
+        "items": [
+          { "badge": "Unique flavour", "name": "Galician Cake", "desc": "Almond base with local cheese!", "img": "tartagallega4", "href": "tartagallega.html" },
+          { "badge": "Galician tradition", "name": "Tarta de Santiago", "desc": "Galician tradition in every bite.", "img": "stg", "href": "tartadesantiago.html" },
+          { "badge": "Creamy and handcrafted", "name": "Cheesecake", "desc": "Creamy, smooth and slowly baked.", "img": "queixo_3", "href": "tartadequeso.html" },
+          { "badge": "Galician tradition", "name": "Larpeira", "desc": "The authentic taste of traditional pastry.", "img": "larpeira", "href": "larpeira.html" }
+        ],
+        "soon": { "title": "More coming soon", "text": "We're baking new delights…" }
+      },
+      "services": {
+        "eyebrow": "Our services",
+        "title": "What can we offer you?",
+        "text": "Handcrafted products, cosy breaks, unforgettable moments…",
+        "points": [
+          { "icon": "check", "label": "Quality products" },
+          { "icon": "cake", "label": "Custom products" },
+          { "icon": "coffee", "label": "Coffee shop" },
+          { "icon": "truck", "label": "Wholesale" }
+        ],
+        "cta": "See more",
+        "img1Alt": "Fresh coffee and pastries",
+        "img2Alt": "Black Forest Cake"
+      }
+    },
+    "producto": {
+      "title": "Our products | Panadería Ana",
+      "description": "Empanadas, pastries, cakes and artisan coffee at Panadería Ana, Cee.",
+      "pagehead": { "title": "Our products", "parent": "Home", "parentHref": "index.html" },
+      "sections": [
+        {
+          "id": "empanadas", "alt": true,
+          "media": [{ "img": "empanada", "alt": "Handcrafted Galician empanada" }],
+          "eyebrow": "Galician empanadas",
+          "title": "The taste of Galician tradition",
+          "body": "<p>Our homemade empanadas are prepared with thin, crispy dough and fillings made with local produce. You can choose from <strong>scallops</strong>, <strong>octopus</strong>, <strong>cod</strong>, <strong>meat</strong>, <strong>tuna</strong> or even <strong>apple</strong> for a sweet touch. Each one reflects the authentic flavour of the Costa da Morte.</p>"
+        },
+        {
+          "id": "empanadillas",
+          "media": [{ "img": "empanadillas", "alt": "Assorted empanadillas" }],
+          "eyebrow": "Empanadillas",
+          "title": "Tasty, practical and always homemade",
+          "body": "<p>Perfect to take away or enjoy on the spot, our empanadillas are prepared with the same homemade dough as our large empanadas. Available in classic flavours such as <strong>ham and cheese</strong>, <strong>meat</strong> and <strong>tuna</strong>. Small in size, big in flavour.</p>"
+        },
+        {
+          "id": "bolleria", "alt": true, "reverse": true,
+          "media": [{ "img": "bolleria", "alt": "Croissants and napolitanas" }, { "img": "croissant", "alt": "Handcrafted sweets and pastries" }],
+          "eyebrow": "Pastries and puff pastry",
+          "title": "Freshly made every morning",
+          "body": "<p>We prepare daily <strong>croissants</strong>, <strong>napolitanas</strong>, <strong>ensaimadas</strong> and a wide variety of puff pastry sweets. All made with quality butter and a touch of love, ideal to accompany our coffees or take home.</p>"
+        },
+        {
+          "id": "tartas",
+          "media": [{ "img": "tartas", "alt": "Custom birthday cakes" }],
+          "eyebrow": "Cakes and sponges",
+          "title": "We sweeten your most special moments",
+          "body": "<p>We make <strong>homemade sponge cakes</strong> and <strong>custom cakes</strong> for birthdays, celebrations or any special occasion. You can choose flavours, fillings and decoration to your liking. Each cake is handcrafted with fresh, natural ingredients.</p>",
+          "cta": { "label": "Order your cake", "href": "contacto.html" }
+        },
+        {
+          "id": "pasteles", "alt": true, "reverse": true,
+          "media": [{ "img": "pastelchoco_1", "alt": "Individual pastries" }, { "img": "pastelnata2", "alt": "Assorted pastries" }],
+          "eyebrow": "Pastries",
+          "title": "Little delights for any moment",
+          "body": "<p>From cream pastries to millefeuille or fruit tartlets, at Panadería Ana we make a wide variety of sweets with traditional recipes. Perfect to accompany your coffee or enjoy during a relaxed afternoon in Cee.</p>"
+        },
+        {
+          "id": "cafes",
+          "media": [{ "img": "cafes2", "alt": "Coffee" }],
+          "eyebrow": "Coffee",
+          "title": "Your moment to unwind",
+          "body": "<p>In addition to our baked goods, we serve <strong>freshly brewed coffee</strong> to enjoy in our shop. An ideal option to share a pleasant moment.</p>"
+        }
+      ],
+      "cta": { "title": "Discover our most beloved specialties", "label": "View specialties", "href": "tartadequeso.html" }
+    },
+    "servicios": {
+      "title": "Our services | Panadería Ana",
+      "description": "Quality products, custom orders, coffee shop and wholesale at Panadería Ana, Cee.",
+      "pagehead": { "title": "Our services", "parent": "Home", "parentHref": "index.html" },
+      "quality": {
+        "eyebrow": "Quality products",
+        "title": "Bread and sweets made with love",
+        "text": "Since our very first batches, quality has been our priority. We use carefully selected ingredients and traditional techniques that guarantee a unique flavour and texture.",
+        "points": ["Daily artisan bread", "Traditional pastries", "Homemade cakes", "Time-honoured recipes"],
+        "img1Alt": "Artisan bread",
+        "img2Alt": "Homemade pastries"
+      },
+      "personalized": {
+        "eyebrow": "Custom products",
+        "title": "Create something unique for your special occasion",
+        "text": "Made-to-order items for celebrations, birthdays and events. Personalise your cake, choose flavours, fillings and decoration.",
+        "point": "Talk to us and we'll design your idea together.",
+        "cta": "Place an order",
+        "imgAlt": "Custom cakes"
+      },
+      "cafeteria": {
+        "eyebrow": "Coffee shop",
+        "title": "Your corner to unwind",
+        "text": "Aromas, flavour and tranquillity. Have a freshly brewed coffee accompanied by our sweet or savoury specialties.",
+        "quote": "Coffee is the best excuse to get together.",
+        "quoteAuthor": "Ethiopian proverb",
+        "imgAlt": "Cosy coffee shop"
+      },
+      "wholesale": {
+        "eyebrow": "Wholesale",
+        "title": "Partner with us",
+        "text": "We supply bars, restaurants and supermarkets in the area with our artisan products.",
+        "point": "Join those who already trust our bakehouse.",
+        "cta": "Contact us",
+        "imgAlt": "Local distribution"
+      },
+      "cta": {
+        "title": "Want to know more or place a special order?",
+        "text": "Call us or visit us, we'll be happy to help.",
+        "ordersLabel": "Orders"
+      }
+    },
+    "nosotros": {
+      "title": "About Us | Panadería Ana",
+      "description": "Discover the story of Panadería Ana, an artisan bakery and pastry shop with roots in Mazaricos and its heart in Cee.",
+      "pagehead": { "title": "About Us", "parent": "Home", "parentHref": "index.html" },
+      "history": {
+        "badge": "Since 2011",
+        "eyebrow": "Our history",
+        "title": "A story kneaded with love and roots",
+        "videoAlt": "Artisan bakehouse Panadería Ana",
+        "body": "<p>Panadería Ana was born in <strong>2011</strong>, with the dream of bringing the taste of authenticity to every home. Our first steps began in <strong>A Picota</strong>, a small corner where, with our own oven and tireless hands, we shaped what we are today: a family united by the love of bread and artisan pastry.</p><p>Eleven years ago, in <strong>2014</strong>, we opened our shop in <strong>Cee</strong>, a town that welcomed us warmly from day one. Here we found our home and here we remain, with the same determination as always: to make every bread, every empanada and every sweet as if it were the first.</p><p>This year marked a very special moment: we moved our <strong>bakehouse from Mazaricos</strong> directly to the shop in Cee. We no longer just bake for the town, but we do it <em>from</em> the heart of the town. Every aroma that comes from the oven is a small story shared with our neighbours.</p>"
+      },
+      "philosophy": {
+        "eyebrow": "Artisan philosophy",
+        "title": "Made in-house, from start to finish",
+        "imgAlt": "Traditional bread from Cee",
+        "body": "<p>At Panadería Ana we believe in what is made with hands and heart. Our products are the result of daily work, of recipes passed down from generation to generation, and of dedication to every detail. There is no rush in our bakehouse: every dough needs its time, and we give it just that.</p><p>We like to think that bread doesn't just nourish, it also brings people together. That's why, every day, we light the oven with the excitement of sharing a little piece of our story with those who walk through the door.</p>",
+        "points": [
+          { "icon": "heart", "label": "Passion for craftsmanship" },
+          { "icon": "flower", "label": "Natural ingredients" },
+          { "icon": "people", "label": "Closeness to our customers" },
+          { "icon": "check", "label": "The taste of tradition" }
+        ]
+      },
+      "cee": {
+        "title": "Cee: our home, our inspiration",
+        "text": "Cee is not just the place where we are, it is part of who we are. Here we have grown, formed friendships and shared thousands of stories around bread. Every customer who walks through the door reminds us why we started and why we carry on: because here, in every loaf, in every sweet, there is a little piece of our town.",
+        "quote": "Blessed is he to whom heaven gave a piece of bread without laying on him the obligation of thanking anyone but heaven itself.",
+        "quoteAuthor": "Cervantes"
+      }
+    },
+    "contacto": {
+      "title": "Contact | Panadería Ana",
+      "description": "Get in touch with Panadería Ana in Cee: phone, WhatsApp, opening hours and location.",
+      "pagehead": { "title": "Contact Us", "parent": "Home", "parentHref": "index.html" },
+      "intro": {
+        "eyebrow": "Contact Us",
+        "title": "If you have any enquiry, please contact us",
+        "text": "We are available at our shop in Cee, by phone, or via WhatsApp. Don't hesitate to get in touch!",
+        "whatsapp": "Send a WhatsApp message"
+      },
+      "schedule": {
+        "title": "Opening hours",
+        "rows": [
+          { "day": "Monday", "hours": "Closed", "closed": true },
+          { "day": "Tuesday", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Wednesday", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Thursday", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Friday", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Saturday", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Sunday", "hours": "9:00 – 14:30" }
+        ]
+      },
+      "map": { "title": "Find us here" },
+      "dev": {
+        "title": "Do you like our website?",
+        "text": "If you have any questions about the website or would like a similar one for your business, feel free to contact the developer."
+      }
+    },
+    "tartadequeso": {
+      "title": "Cheesecake | Panadería Ana",
+      "description": "Discover the famous cheesecake at Panadería Ana in Cee: creamy, artisan and with an unmistakable Galician touch.",
+      "pagehead": { "title": "Cheesecake", "parent": "Specialties", "parentHref": "#" },
+      "quote": { "text": "A dessert without cheese is like a beauty with only one eye.", "author": "Jean Anthelme Brillat-Savarin" },
+      "history": {
+        "eyebrow": "Galician Tradition",
+        "title": "A story of flavour, from the heart of Galicia",
+        "imgAlt": "Roman mosaic of bakers",
+        "caption": "Roman mosaic depicting bakers making a cheesecake in Pompeii, circa 70 AD.",
+        "body": "<p>Although cheesecake has ancient roots (the Greeks already offered cheesecakes to Olympic athletes), in Galicia it found its own character. The combination of local cheeses, fresh eggs and artisan care gave it a unique identity.</p><p>At Panadería Ana we continue that tradition: we bake each cake as if it were the first, caring for the creamy texture and balanced flavour that so defines us.</p>"
+      },
+      "flavors": {
+        "headEyebrow": "Specialties",
+        "headTitle": "Four versions to fall in love with",
+        "headSub": "Discover our artisan cheesecake flavours.",
+        "eyebrow": "Special flavours",
+        "title": "A modern touch",
+        "body": "<p>At Panadería Ana we believe that tradition is not at odds with innovation. Every cake is born from a homemade recipe that we care for lovingly: fresh ingredients, patient baking and that creamy texture that defines us. From that authentic base, we go a step further to surprise those looking for something special.</p><p>That is why we have created our special cheesecakes: <strong>Lotus</strong>, with its spiced sweetness; <strong>Pistachio</strong>, delicate and creamy; <strong>Kinder</strong>, for chocolate lovers; and <strong>Red Berries</strong>, fresh and fruity. A modern touch that respects the essence of homemade cheesecake and celebrates our passion for baking.</p>",
+        "images": [
+          { "img": "queixo-l", "alt": "Lotus Cheesecake" },
+          { "img": "queixo-p", "alt": "Pistachio Cheesecake" },
+          { "img": "queixo_f1", "alt": "Red Berries Cheesecake" }
+        ]
+      },
+      "stats": {
+        "title": "Did you know…?",
+        "text": "Last summer our cheesecake won over hundreds of people in Cee. And the numbers speak for themselves!",
+        "items": [
+          { "num": "540", "label": "Whole cakes sold<br>throughout the entire summer" },
+          { "num": "2,250", "label": "Individual portions<br>during the season" }
+        ]
+      },
+      "cta": { "title": "But it's not our only homemade Galician cake…", "label": "View Galician Cake", "href": "tartagallega.html" }
+    },
+    "tartadesantiago": {
+      "title": "Tarta de Santiago | Panadería Ana",
+      "description": "Discover the authentic Tarta de Santiago at Panadería Ana: history, tradition and flavour with 100% Galician almond.",
+      "pagehead": { "title": "Tarta de Santiago", "parent": "Specialties", "parentHref": "#" },
+      "quote": { "text": "Simplicity is the ultimate sophistication.", "author": "Leonardo da Vinci" },
+      "history": {
+        "eyebrow": "Compostelan heritage",
+        "title": "A recipe born along the Camino",
+        "imgAlt": "Pedro Portocarrero, bishop and cleric",
+        "caption": "Pedro Portocarrero, bishop and cleric.",
+        "body": "<p>The first historical record of the tarta de Santiago is from the bishop Pedro Portocarrero, when he first visited the University of Santiago in 1577. Ever since, it became a symbol of the city. The cake travelled in the saddlebags of pilgrims along the Camino and it soon became a symbol of Galician hospitality. Its recipe was already well documented by the 16th century.</p><p>What is extraordinary is its simplicity: <strong>ground almond, sugar and egg</strong>. Nothing more. No wheat flour, no preservatives. And here at Panadería Ana we go a step further: we use <strong>100% natural Galician almond flour</strong>, which enhances its original flavour and its rich, moist texture.</p>"
+      },
+      "making": {
+        "headEyebrow": "Artisanal process",
+        "headTitle": "Three ingredients. A 100-year-long tradition.",
+        "headSub": "The original recipe needs no enhancements: only good almond, sugar and fresh eggs.",
+        "badge": "Our baker, José Manuel",
+        "videoAlt": "Artisan elaboration of the Tarta de Santiago",
+        "subtitle": "Our way of baking",
+        "points": [
+          "100% almond flour.",
+          "Fresh eggs from local farms.",
+          "The right amount of sugar.",
+          "Slow and uniform baking."
+        ],
+        "body": "<p>What truly makes our product unique is our absolute respect for the traditional recipe. We make our cakes exclusively with the finest quality ground almonds, without resorting to added flours or ingredients that cut costs at the expense of flavour. Every bite preserves the authenticity of centuries of Galician baking tradition.</p><p>In a world where industrial production prioritises speed over quality, we choose the opposite path: craftsmanship. Each cake is handmade with patience and care, maintaining the perfect balance of texture, aroma and flavour. This is how we guarantee a unique experience that transports you directly to the deepest roots of Galicia.</p><p>Many pilgrims and tourists passing through Cee look for an authentic souvenir, a piece of Galicia they can take home with them. Our Tarta de Santiago is much more than a dessert: it is a symbol, a testament to tradition, hospitality and dedication.</p><p>That is why we put all our care and effort into every preparation. We carefully select our raw ingredients, oversee every stage of the process, and pay attention to every detail, from the batter to the final packaging. We want you, when you taste it, to enjoy not only its unmistakable flavour but also the history and soul it carries.</p><p>Whether as a gift, a keepsake, or simply a sweet treat, our Tarta de Santiago is an invitation to savour Galicia with your heart.</p>"
+      },
+      "mazaricos": {
+        "title": "Our creation: Tarta de Mazaricos",
+        "body": "A special version of the Tarta de Santiago, with <strong>high quality nuts</strong> and a touch of <strong>local honey</strong>. A homage to our country origins in A Picota and to nature itself.",
+        "imgAlt": "Tarta de Mazaricos"
+      },
+      "stats": {
+        "title": "Did you know…?",
+        "text": "Our Tarta de Santiago has travelled far. Tourists and pilgrims have taken them home to England, Germany, America, Korea… Where will you take it?",
+        "items": [
+          { "num": "630", "label": "Almond cakes sold", "sub": "summer 2025" }
+        ]
+      },
+      "cta": { "title": "Want to know how we got here?", "label": "View our story", "href": "nosotros.html" }
+    },
+    "larpeira": {
+      "title": "Larpeira | Panadería Ana",
+      "description": "Discover the authentic Larpeira at Panadería Ana: Galician tradition in every slice of our artisan bread.",
+      "pagehead": { "title": "Larpeira", "parent": "Specialties", "parentHref": "#" },
+      "quote": { "text": "Non é xa o cativo currunchiño<br>que din escolas vellas:<br>Galicia é infinda!", "author": "Florencio Delgado Gurriarán" },
+      "history": {
+        "eyebrow": "The history of Larpeira",
+        "title": "A sweet rooted in Galicia",
+        "imgAlt": "Traditional Galician larpeira",
+        "body": "<p>The Galician larpeira was born from the ancient sweet buns made with butter and anise in different areas of Galicia. Over time, the pastry cream and anise syrup that make it so special today were gradually added.</p><p>It is said that around <strong>1927</strong>, in a pastry shop in Cambre, the famous <strong>diamond-shaped cuts</strong> began to be made in the dough — a hallmark that gives it its unique appearance and helps distribute the cream more evenly. Since then, this dessert has become a true classic at our celebrations.</p>"
+      },
+      "galicia": {
+        "eyebrow": "Galician tradition",
+        "title": "The sweet bun of Galician celebration",
+        "videoAlt": "Traditional Galician larpeira",
+        "caption": "The artisanal Larpeira, a symbol of Galician baking.",
+        "body": "<p>The Larpeira is one of the sweetest treasures of traditional Galician pastry. Originally from rural areas, this sweet bread was traditionally made for special celebrations, patron saint festivals, and important family events.</p><p>Its name comes from the Galician word «larpeira», referring to its fluffy texture and slightly sweet flavour. What sets our Larpeira apart is the use of <strong>local butter</strong> and <strong>free-range eggs</strong>, which give it that characteristic golden colour and a tender, aromatic crumb.</p><p>At Panadería Ana we respect the traditional recipe but add our personal touch: a subtle hint of <strong>anisette</strong> that enhances its aroma without altering its traditional essence.</p>"
+      },
+      "sweet": {
+        "title": "A sweet touch",
+        "body": "A special version of our traditional Larpeira, with a delicious <strong>fresh whipped cream filling</strong> that adds a smooth texture and an irresistible flavour. Perfect for celebrations, afternoon snacks, or simply enjoying a sweet Galician moment.",
+        "imgAlt": "Larpeira filled with cream"
+      },
+      "stats": {
+        "title": "Did you know?",
+        "text": "The Galician <strong>Larpeira</strong> is one of the most typical sweets of <em>Noite de San Xoán</em> (St. John's Eve), when bonfires light up the beaches and squares of Galicia every June 23rd.",
+        "items": [
+          { "pre": "over", "num": "80", "label": "larpeiras sold", "sub": "last year's St. John's" }
+        ]
+      },
+      "cta": { "title": "Fancy enjoying a freshly made Larpeira?", "label": "Place your order", "href": "contacto.html" }
+    },
+    "tartagallega": {
+      "title": "Galician Cake | Panadería Ana",
+      "description": "Discover the Galician Cake at Panadería Ana: a unique fusion of traditional almond cake with Galician semi-cured cheese.",
+      "pagehead": { "title": "Galician Cake", "parent": "Specialties", "parentHref": "#" },
+      "quote": { "text": "¡Nin rosiñas brancas, nin claveles roxos!<br>Eu venero as froliñas dos toxos.", "author": "Antonio Noriega Varela, As froliñas dos toxos" },
+      "history": {
+        "eyebrow": "Galician Tradition",
+        "title": "Galician essence in every bite",
+        "imgAlt": "Galician cake",
+        "caption": "Our Galician Cake: the perfect mix of tradition and innovation.",
+        "body": "<p>Our Galician Cake is our most beloved creation, a fusion of everything that celebrates Galician baking tradition: almond cake, with its century-long history, and delicious semi-cured Galician cheese, with its unique flavour.</p><p>Here at Panadería Ana we wanted to bring together two of our specialties in a dessert that represents our native land: a rustic almond base combined with the sweetness of creamy cheese.</p>"
+      },
+      "harmony": {
+        "headTitle": "Two traditions in one cake",
+        "headSub": "The perfect balance between almond cake and Galician cheese.",
+        "eyebrow": "Traditional wisdom",
+        "title": "A contrast of flavours and textures",
+        "imgAlt": "Galician cake detail",
+        "caption": "The perfect contrast: almond cake base and artisanal Galician semi-cured cheese.",
+        "body": "<p>Our Galician Cake starts with a base of traditional almond cake, made from the best-quality almonds crushed to a flour, mixed with fresh eggs and our own special touch that we have mastered through the years. This base provides a moist, rich texture that hydrates beautifully with the cheese.</p><p>On top of this base we add a layer of cheesecake made with country cheeses, including semi-cured Galician cheese that rises during baking, creating a unique, mousse-like fluffiness. The result is a sublime contrast: the sweetness of the almond with the savoury note of the cheese, the dense texture of the cake with the airiness of the cheesecake.</p>"
+      },
+      "tradition": {
+        "eyebrow": "Tradition and Modernity",
+        "title": "A homage to our roots",
+        "imgAlt": "Traditional Galician cake",
+        "body": "<p>While our modern cheesecakes (Lotus, Pistachio, Kinder and Red Berries) explore new combinations of flavours, the Galician Cake is our tribute to all that is authentically Galician.</p><p>This creation does not follow international trends; instead it is rooted in what is ours: the almond of the Galician woods and the cheese of our cows, raised on the green pastures of our land. It is the answer for those who seek the taste of Galicia in its purest form.</p>",
+        "points": [
+          { "icon": "flower", "title": "Flavourful almond base", "text": "Made from the same exquisite almonds as our Tarta de Santiago, creating a moist, rich texture that hydrates perfectly with the layer of cheese." },
+          { "icon": "cheese", "title": "Semi-cured local cheese", "text": "Galician semi-cured farmhouse cheese, giving a more intense flavour and an experience no cheese lover should miss." }
+        ]
+      },
+      "cta": {
+        "title": "Discover our other Galician specialties…",
+        "buttons": [
+          { "label": "Cheesecakes", "href": "tartadequeso.html" },
+          { "label": "Tarta de Santiago", "href": "tartadesantiago.html" }
+        ]
+      }
+    }
+  }
+}

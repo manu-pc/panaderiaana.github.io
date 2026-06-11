@@ -1,0 +1,50 @@
+<footer class="footer reveal">
+  <div class="container footer__grid">
+    <div>
+      <h4>{{ t.footer.visit }}</h4>
+      <address>
+        {% for line in site.address %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}
+      </address>
+      <p class="footer__note">{{ t.footer.tagline }}</p>
+    </div>
+
+    <div class="footer__contact">
+      <h4>{{ t.footer.contact }}</h4>
+      <p class="footer__line">
+        <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+        <a href="tel:{{ site.phoneTel }}">{{ site.phoneShort }}</a>
+      </p>
+      <p class="footer__line">
+        <svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </p>
+      <p class="footer__line">
+        <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+        <a href="{{ site.instagramUrl }}" target="_blank" rel="noopener">@{{ site.instagram }}</a>
+      </p>
+      <div class="footer__social">
+        <a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        </a>
+        <a href="mailto:{{ site.email }}" aria-label="Email">
+          <svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg>
+        </a>
+        <a href="{{ site.instagramUrl }}" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+  <div class="container copyright__grid">
+    <div>{{ t.footer.copyright | replace("{year}", year) }}</div>
+    <div>
+      {{ t.footer.designedBy }}
+      <a href="{{ site.dev.github }}" target="_blank" rel="noopener">{{ site.dev.name }}</a>
+      <br>
+      <a href="mailto:{{ site.dev.email }}">{{ site.dev.email }}</a>
+    </div>
+  </div>
+</div>

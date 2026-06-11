@@ -1,0 +1,21 @@
+{
+  "phone": "+34 602 547 602",
+  "phoneShort": "602 547 602",
+  "phoneTel": "602547602",
+  "whatsapp": "34602547602",
+  "email": "panaderiapasteleriaana@gmail.com",
+  "instagram": "panaderia.ana",
+  "instagramUrl": "https://www.instagram.com/panaderia.ana/",
+  "address": [
+    "Avda. Lino Rodríguez Madero, 6",
+    "(C. Cial. Finis Terrae, Planta Baja)",
+    "15270 Cee (A Coruña)"
+  ],
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.0749030537136!2d-9.193639509514131!3d42.955625932136385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd292d002c7b99c5%3A0x69504090a763f0c8!2sPanaderia%20Pasteleria%20Ana!5e0!3m2!1ses!2ses!4v1761131656389!5m2!1ses!2ses",
+  "dev": {
+    "name": "Manuel Pereiro Conde",
+    "email": "pereirocondemanuel@gmail.com",
+    "github": "https://github.com/manu-pc",
+    "githubLabel": "github.com/manu-pc"
+  }
+}

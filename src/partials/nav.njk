@@ -1,0 +1,45 @@
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">ana</a>
+
+    <button class="nav__toggle" aria-label="{{ nav.menu }}" aria-expanded="false">
+      <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+
+    <div class="nav__drawer">
+      <nav class="nav__menu">
+        <a href="index.html" class="nav__link {{ 'is-active' if page.nav == 'index' }}">{{ nav.home }}</a>
+        <a href="producto.html" class="nav__link {{ 'is-active' if page.nav == 'producto' }}">{{ nav.products }}</a>
+        <a href="servicios.html" class="nav__link {{ 'is-active' if page.nav == 'servicios' }}">{{ nav.services }}</a>
+        <a href="nosotros.html" class="nav__link {{ 'is-active' if page.nav == 'nosotros' }}">{{ nav.about }}</a>
+        <div class="nav__item">
+          <a href="#" class="nav__link" aria-haspopup="true">{{ nav.specialties }}</a>
+          <div class="nav__dropdown">
+            <a href="tartadequeso.html">{{ nav.cheesecake }}</a>
+            <a href="tartadesantiago.html">{{ nav.santiago }}</a>
+            <a href="larpeira.html">{{ nav.larpeira }}</a>
+            <a href="tartagallega.html"><span class="tag-new">[{{ nav.new }}]</span> {{ nav.tartagallega }}</a>
+            <span class="is-soon">{{ nav.soon }}</span>
+          </div>
+        </div>
+        <a href="contacto.html" class="nav__link {{ 'is-active' if page.nav == 'contacto' }}">{{ nav.contact }}</a>
+      </nav>
+
+      <div class="lang" aria-label="{{ nav.language }}">
+        {% for l in langLinks %}
+        <a href="{{ l.href }}" hreflang="{{ l.lang }}" title="{{ l.label }}" class="{{ 'is-active' if l.lang == lang }}">
+          <img src="../img/{{ l.flag }}.svg" alt="{{ l.label }}" width="24" height="16">
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="nav__phone">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+      <div>
+        <small>{{ t.site.ordersLabel }}</small>
+        <strong>{{ site.phone }}</strong>
+      </div>
+    </div>
+  </div>
+</header>

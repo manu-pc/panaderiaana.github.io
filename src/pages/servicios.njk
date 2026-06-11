@@ -1,0 +1,99 @@
+{% extends "layouts/base.njk" %}
+{% block body %}
+{% include "partials/pagehead.njk" %}
+
+{% set q = content.quality %}
+<section class="section">
+  <div class="container">
+    <div class="feature">
+      <div class="feature__media reveal">
+        <div class="media-pair">
+          <a href="../img/bolos_2.webp" data-lightbox data-title="{{ q.img1Alt }}"><img src="../img/bolos_2.webp" alt="{{ q.img1Alt }}" loading="lazy"></a>
+          <a href="../img/larpeira.webp" data-lightbox data-title="{{ q.img2Alt }}"><img src="../img/larpeira.webp" alt="{{ q.img2Alt }}" loading="lazy"></a>
+        </div>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ q.eyebrow }}</p>
+        <h2>{{ q.title }}</h2>
+        <p>{{ q.text }}</p>
+        <ul class="checklist">
+          {% for item in q.points %}<li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>{{ item }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set p = content.personalized %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="feature feature--reverse">
+      <div class="feature__media reveal">
+        <a href="../img/shin.webp" data-lightbox data-title="{{ p.imgAlt }}"><img src="../img/shin.webp" alt="{{ p.imgAlt }}" loading="lazy"></a>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ p.eyebrow }}</p>
+        <h2>{{ p.title }}</h2>
+        <p>{{ p.text }}</p>
+        <div class="point">
+          <span class="point__icon"><svg class="icon" aria-hidden="true"><use href="#i-cake"/></svg></span>
+          <span>{{ p.point }}</span>
+        </div>
+        <p style="margin-top:2rem"><a class="btn btn--primary" href="contacto.html">{{ p.cta }}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set c = content.cafeteria %}
+<section class="section section--brand">
+  <div class="container">
+    <div class="feature">
+      <div class="feature__media reveal">
+        <a href="../img/queixocafe.webp" data-lightbox data-title="{{ c.imgAlt }}"><img src="../img/queixocafe.webp" alt="{{ c.imgAlt }}" loading="lazy"></a>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ c.eyebrow }}</p>
+        <h2>{{ c.title }}</h2>
+        <p>{{ c.text }}</p>
+        <blockquote class="quote">
+          <p>{{ c.quote }}</p>
+          <footer>{{ c.quoteAuthor }}</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set m = content.wholesale %}
+<section class="section">
+  <div class="container">
+    <div class="feature feature--reverse">
+      <div class="feature__media reveal">
+        <a href="../img/megaempanada.webp" data-lightbox data-title="{{ m.imgAlt }}"><img src="../img/megaempanada.webp" alt="{{ m.imgAlt }}" loading="lazy"></a>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ m.eyebrow }}</p>
+        <h2>{{ m.title }}</h2>
+        <p>{{ m.text }}</p>
+        <div class="point">
+          <span class="point__icon"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></span>
+          <span>{{ m.point }}</span>
+        </div>
+        <p style="margin-top:2rem"><a class="btn btn--outline" href="contacto.html">{{ m.cta }}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent center">
+  <div class="container reveal">
+    <h2>{{ content.cta.title }}</h2>
+    <p>{{ content.cta.text }}</p>
+    <p style="font-size:1.4rem;font-weight:600;margin-top:1rem">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+      {{ content.cta.ordersLabel }}: <a href="tel:{{ site.phoneTel }}" style="color:inherit">{{ site.phone }}</a>
+    </p>
+  </div>
+</section>
+{% endblock %}

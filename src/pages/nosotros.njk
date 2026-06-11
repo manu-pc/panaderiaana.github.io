@@ -1,0 +1,56 @@
+{% extends "layouts/base.njk" %}
+{% block body %}
+{% include "partials/pagehead.njk" %}
+
+{% set h = content.history %}
+<section class="section">
+  <div class="container">
+    <div class="feature">
+      <div class="feature__media reveal">
+        <div class="framed">
+          <video src="../img/josemanuel.mp4" poster="../img/josemanuel-poster.webp" autoplay muted loop playsinline aria-label="{{ h.videoAlt }}"></video>
+          <span class="framed__badge">{{ h.badge }}</span>
+        </div>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ h.eyebrow }}</p>
+        <h2>{{ h.title }}</h2>
+        {{ h.body | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set p = content.philosophy %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="feature feature--reverse">
+      <div class="feature__media reveal">
+        <img src="../img/barras2.webp" alt="{{ p.imgAlt }}" loading="lazy">
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ p.eyebrow }}</p>
+        <h2>{{ p.title }}</h2>
+        {{ p.body | safe }}
+        <ul class="checklist">
+          {% for item in p.points %}
+          <li><svg class="icon" aria-hidden="true"><use href="#i-{{ item.icon }}"/></svg>{{ item.label }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set c = content.cee %}
+<section class="section section--brand center">
+  <div class="container reveal">
+    <h2>{{ c.title }}</h2>
+    <p class="measure mx-auto">{{ c.text }}</p>
+    <blockquote class="quote" style="display:inline-block;text-align:left;max-width:640px;margin-top:1.5rem">
+      <p>{{ c.quote }}</p>
+      <footer>{{ c.quoteAuthor }}</footer>
+    </blockquote>
+  </div>
+</section>
+{% endblock %}

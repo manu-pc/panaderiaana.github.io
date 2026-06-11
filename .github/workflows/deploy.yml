@@ -1,0 +1,43 @@
+name: Build and deploy
+
+# Builds the static site from src/ and publishes dist/ to the gh-pages branch,
+# which GitHub Pages serves. Runs on every push to main.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Media is already optimized and committed under img/, so we only run the
+      # HTML build here (no ffmpeg/sharp needed in CI).
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # CNAME is copied into dist/ by build.js, preserving the custom domain.

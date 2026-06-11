@@ -1,0 +1,104 @@
+{% extends "layouts/base.njk" %}
+{% block body %}
+{% set hero = content.hero %}
+
+<section class="hero" data-carousel>
+  <div class="hero__track">
+    {% for s in hero.slides %}
+    <div class="hero__slide">
+      <img src="../img/{{ s.img }}.webp" alt="{{ s.alt }}" {{ 'loading=lazy' if not loop.first }} width="1280" height="853">
+    </div>
+    {% endfor %}
+  </div>
+  <button class="hero__btn hero__btn--prev" aria-label="{{ hero.prev }}"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+  <button class="hero__btn hero__btn--next" aria-label="{{ hero.next }}"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+  <div class="hero__dots"></div>
+  <div class="hero__overlay">
+    <h1>{{ hero.title }}</h1>
+    <p>{{ hero.subtitle }}</p>
+    <a href="#producto" class="btn btn--primary">{{ hero.cta }}</a>
+  </div>
+</section>
+
+{% set about = content.about %}
+<section id="producto" class="section">
+  <div class="container">
+    <div class="feature">
+      <div class="feature__media reveal">
+        <div class="media-pair">
+          <a href="../img/queixo_f1.webp" data-lightbox data-title="{{ about.img1Alt }}"><img src="../img/queixo_f1.webp" alt="{{ about.img1Alt }}" loading="lazy"></a>
+          <a href="../img/pastelnata2.webp" data-lightbox data-title="{{ about.img2Alt }}"><img src="../img/pastelnata2.webp" alt="{{ about.img2Alt }}" loading="lazy"></a>
+        </div>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ about.eyebrow }}</p>
+        <h2>{{ about.title }}</h2>
+        <p>{{ about.text }}</p>
+        <ul class="checklist">
+          {% for item in about.points %}
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        <a class="btn btn--primary" href="producto.html">{{ about.cta }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set sp = content.specialties %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ sp.eyebrow }}</p>
+      <h2>{{ sp.title }}</h2>
+    </div>
+    <div class="cards">
+      {% for c in sp.items %}
+      <article class="card reveal">
+        <div class="card__body">
+          <span class="card__badge">{{ c.badge }}</span>
+          <h3>{{ c.name }}</h3>
+          <p class="muted">{{ c.desc }}</p>
+        </div>
+        <div class="card__media">
+          <img src="../img/{{ c.img }}.webp" alt="{{ c.name }}" loading="lazy">
+          <a class="card__overlay" href="{{ c.href }}" aria-label="{{ c.name }}">
+            <span class="card__eye"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg></span>
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+      <article class="card card--soon reveal">
+        <svg class="icon" aria-hidden="true"><use href="#i-hourglass"/></svg>
+        <h3>{{ sp.soon.title }}</h3>
+        <p class="muted">{{ sp.soon.text }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+{% set sv = content.services %}
+<section class="section">
+  <div class="container">
+    <div class="feature feature--reverse">
+      <div class="feature__media reveal">
+        <div class="media-pair">
+          <a href="../img/cafe.webp" data-lightbox data-title="{{ sv.img1Alt }}"><img src="../img/cafe.webp" alt="{{ sv.img1Alt }}" loading="lazy"></a>
+          <a href="../img/pastelselva.webp" data-lightbox data-title="{{ sv.img2Alt }}"><img src="../img/pastelselva.webp" alt="{{ sv.img2Alt }}" loading="lazy"></a>
+        </div>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ sv.eyebrow }}</p>
+        <h2>{{ sv.title }}</h2>
+        <p>{{ sv.text }}</p>
+        <ul class="checklist">
+          {% for item in sv.points %}
+          <li><svg class="icon" aria-hidden="true"><use href="#i-{{ item.icon }}"/></svg><strong>{{ item.label }}</strong></li>
+          {% endfor %}
+        </ul>
+        <a class="btn btn--primary" href="servicios.html">{{ sv.cta }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "layouts/base.njk" %}
+{% block body %}
+{% include "partials/pagehead.njk" %}
+
+<section class="section" style="padding-bottom:0">
+  <div class="container reveal">
+    <blockquote class="quote"><p>{{ content.quote.text }}</p><footer>{{ content.quote.author }}</footer></blockquote>
+  </div>
+</section>
+
+{% set h = content.history %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="feature">
+      <div class="feature__media reveal">
+        <img src="../img/mosaico.webp" alt="{{ h.imgAlt }}" loading="lazy">
+        <p class="feature__caption">{{ h.caption }}</p>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ h.eyebrow }}</p>
+        <h2>{{ h.title }}</h2>
+        {{ h.body | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set f = content.flavors %}
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ f.headEyebrow }}</p>
+      <h2>{{ f.headTitle }}</h2>
+      <p class="muted">{{ f.headSub }}</p>
+    </div>
+    <div class="feature">
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ f.eyebrow }}</p>
+        <h2>{{ f.title }}</h2>
+        {{ f.body | safe }}
+      </div>
+      <div class="feature__media reveal">
+        <div class="cards" style="grid-template-columns:1fr 1fr;gap:1rem">
+          {% for m in f.images %}
+          <a href="../img/{{ m.img }}.webp" data-lightbox data-title="{{ m.alt }}" style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)">
+            <img src="../img/{{ m.img }}.webp" alt="{{ m.alt }}" loading="lazy" style="aspect-ratio:1/1;object-fit:cover;width:100%">
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set s = content.stats %}
+<section class="section section--brand center">
+  <div class="container reveal">
+    <h2>{{ s.title }}</h2>
+    <p class="lead measure mx-auto">{{ s.text }}</p>
+    <div class="stats" style="margin-top:2.5rem">
+      {% for it in s.items %}
+      <div><div class="stat__num">{{ it.num }}</div><p>{{ it.label | safe }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent center">
+  <div class="container reveal">
+    <h2>{{ content.cta.title }}</h2>
+    <a class="btn btn--light" href="{{ content.cta.href }}">{{ content.cta.label }}</a>
+  </div>
+</section>
+{% endblock %}

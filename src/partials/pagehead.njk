@@ -1,0 +1,9 @@
+<section class="pagehead"{% if page.head %} style="--pagehead-img: url('../img/{{ page.head }}.webp')"{% endif %}>
+  <div class="container">
+    <h1>{{ content.pagehead.title }}</h1>
+    <ol class="breadcrumb">
+      <li><a href="{{ content.pagehead.parentHref | default('index.html') }}">{{ content.pagehead.parent }}</a></li>
+      <li class="is-current" aria-current="page">{{ content.pagehead.title }}</li>
+    </ol>
+  </div>
+</section>

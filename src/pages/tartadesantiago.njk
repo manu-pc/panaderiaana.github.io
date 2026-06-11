@@ -1,0 +1,84 @@
+{% extends "layouts/base.njk" %}
+{% block body %}
+{% include "partials/pagehead.njk" %}
+
+<section class="section" style="padding-bottom:0">
+  <div class="container reveal">
+    <blockquote class="quote"><p>{{ content.quote.text }}</p><footer>{{ content.quote.author }}</footer></blockquote>
+  </div>
+</section>
+
+{% set h = content.history %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="feature feature--reverse">
+      <div class="feature__media reveal">
+        <img src="../img/pedro_portocarrero.webp" alt="{{ h.imgAlt }}" loading="lazy">
+        <p class="feature__caption">{{ h.caption }}</p>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ h.eyebrow }}</p>
+        <h2>{{ h.title }}</h2>
+        {{ h.body | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set m = content.making %}
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ m.headEyebrow }}</p>
+      <h2>{{ m.headTitle }}</h2>
+      <p class="muted">{{ m.headSub }}</p>
+    </div>
+    <div class="feature">
+      <div class="feature__media reveal">
+        <div class="framed">
+          <video src="../img/stg.mp4" poster="../img/stg-poster.webp" autoplay muted loop playsinline aria-label="{{ m.videoAlt }}"></video>
+          <span class="framed__badge">{{ m.badge }}</span>
+        </div>
+      </div>
+      <div class="feature__body reveal">
+        <h3>{{ m.subtitle }}</h3>
+        <ul class="checklist">
+          {% for it in m.points %}<li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>{{ it }}</li>{% endfor %}
+        </ul>
+        {{ m.body | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set mz = content.mazaricos %}
+<section class="section section--brand center">
+  <div class="container reveal">
+    <h2>{{ mz.title }}</h2>
+    <p class="lead measure mx-auto">{{ mz.body | safe }}</p>
+    <div style="max-width:520px;margin:2rem auto 0">
+      <img src="../img/stgmz.webp" alt="{{ mz.imgAlt }}" loading="lazy" style="border-radius:var(--radius);box-shadow:var(--shadow)">
+    </div>
+  </div>
+</section>
+
+{% set s = content.stats %}
+<section class="section section--alt center">
+  <div class="container reveal">
+    <h2>{{ s.title }}</h2>
+    <p class="lead measure mx-auto">{{ s.text }}</p>
+    <div class="stats" style="margin-top:2rem">
+      {% for it in s.items %}
+      <div><div class="stat__num">{{ it.num }}</div><p>{{ it.label }}</p><p class="muted">{{ it.sub }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent center">
+  <div class="container reveal">
+    <h2>{{ content.cta.title }}</h2>
+    <a class="btn btn--light" href="{{ content.cta.href }}">{{ content.cta.label }}</a>
+  </div>
+</section>
+{% endblock %}

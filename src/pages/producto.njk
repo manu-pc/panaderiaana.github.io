@@ -1,0 +1,37 @@
+{% extends "layouts/base.njk" %}
+{% block body %}
+{% include "partials/pagehead.njk" %}
+
+{% for s in content.sections %}
+<section{% if s.id %} id="{{ s.id }}"{% endif %} class="section {{ 'section--alt' if s.alt }}">
+  <div class="container">
+    <div class="feature {{ 'feature--reverse' if s.reverse }}">
+      <div class="feature__media reveal">
+        {% if s.media | length > 1 %}
+        <div class="media-pair">
+          {% for m in s.media %}
+          <a href="../img/{{ m.img }}.webp" data-lightbox data-title="{{ m.alt }}"><img src="../img/{{ m.img }}.webp" alt="{{ m.alt }}" loading="lazy"></a>
+          {% endfor %}
+        </div>
+        {% else %}
+        <a href="../img/{{ s.media[0].img }}.webp" data-lightbox data-title="{{ s.media[0].alt }}"><img src="../img/{{ s.media[0].img }}.webp" alt="{{ s.media[0].alt }}" loading="lazy"></a>
+        {% endif %}
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ s.eyebrow }}</p>
+        <h2>{{ s.title }}</h2>
+        {{ s.body | safe }}
+        {% if s.cta %}<a class="btn btn--primary" href="{{ s.cta.href }}">{{ s.cta.label }}</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<section class="section section--brand center">
+  <div class="container reveal">
+    <h2>{{ content.cta.title }}</h2>
+    <a class="btn btn--light" href="{{ content.cta.href }}">{{ content.cta.label }}</a>
+  </div>
+</section>
+{% endblock %}

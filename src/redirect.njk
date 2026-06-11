@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <meta charset="utf-8">
+  <title>Panadería Ana</title>
+  <meta http-equiv="refresh" content="0;url=/{{ DEFAULT_LANG }}/index.html">
+  {% for l in LANGS %}
+  <link rel="alternate" hreflang="{{ l }}" href="{{ ORIGIN }}/{{ l }}/index.html">
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ ORIGIN }}/{{ DEFAULT_LANG }}/index.html">
+  <link rel="canonical" href="{{ ORIGIN }}/{{ DEFAULT_LANG }}/index.html">
+</head>
+<body>
+  <p>Redirigiendo… / Redirecting… / Redirixindo…</p>
+  <script>window.location.replace('/{{ DEFAULT_LANG }}/index.html');</script>
+</body>
+</html>

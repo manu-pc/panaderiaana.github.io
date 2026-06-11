@@ -1,0 +1,79 @@
+{% extends "layouts/base.njk" %}
+{% block body %}
+{% include "partials/pagehead.njk" %}
+
+<section class="section" style="padding-bottom:0">
+  <div class="container reveal">
+    <blockquote class="quote"><p>{{ content.quote.text | safe }}</p><footer>{{ content.quote.author }}</footer></blockquote>
+  </div>
+</section>
+
+{% set h = content.history %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="feature">
+      <div class="feature__media reveal">
+        <img src="../img/tartagallega.webp" alt="{{ h.imgAlt }}" loading="lazy">
+        <p class="feature__caption">{{ h.caption }}</p>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ h.eyebrow }}</p>
+        <h2>{{ h.title }}</h2>
+        {{ h.body | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set a = content.harmony %}
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>{{ a.headTitle }}</h2>
+      <p class="muted">{{ a.headSub }}</p>
+    </div>
+    <div class="feature">
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ a.eyebrow }}</p>
+        <h2>{{ a.title }}</h2>
+        {{ a.body | safe }}
+      </div>
+      <div class="feature__media reveal">
+        <a href="../img/tartagallega3.webp" data-lightbox data-title="{{ a.imgAlt }}"><img src="../img/tartagallega3.webp" alt="{{ a.imgAlt }}" loading="lazy" style="aspect-ratio:1/1;object-fit:cover"></a>
+        <p class="feature__caption">{{ a.caption }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set tr = content.tradition %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="feature">
+      <div class="feature__media reveal">
+        <img src="../img/tartagallega1.webp" alt="{{ tr.imgAlt }}" loading="lazy">
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ tr.eyebrow }}</p>
+        <h2>{{ tr.title }}</h2>
+        {{ tr.body | safe }}
+        {% for pt in tr.points %}
+        <div class="point">
+          <span class="point__icon"><svg class="icon" aria-hidden="true"><use href="#i-{{ pt.icon }}"/></svg></span>
+          <span><strong>{{ pt.title }}</strong><br>{{ pt.text }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent center">
+  <div class="container reveal">
+    <h2>{{ content.cta.title }}</h2>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      {% for b in content.cta.buttons %}<a class="btn btn--light" href="{{ b.href }}">{{ b.label }}</a>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,386 @@
+{
+  "site": {
+    "brand": "Panadería Ana",
+    "tagline": "Panadería e pastelería artesanal en Cee (A Coruña). Pan, bolería, tartas e empanadas de elaboración propia.",
+    "ordersLabel": "Encargos",
+    "backToTop": "Volver arriba",
+    "langNames": { "es": "Español", "en": "English", "gl": "Galego" }
+  },
+  "nav": {
+    "home": "Inicio",
+    "products": "Produtos",
+    "services": "Servizos",
+    "about": "Sobre nós",
+    "contact": "Contacto",
+    "specialties": "Especialidades",
+    "cheesecake": "Tarta de queixo",
+    "santiago": "Tarta de Santiago",
+    "larpeira": "Larpeira",
+    "tartagallega": "Tarta galega",
+    "soon": "Proximamente máis",
+    "new": "NOVO",
+    "menu": "Menú",
+    "language": "Idioma"
+  },
+  "footer": {
+    "visit": "Ven visitarnos!",
+    "tagline": "Agardámoste co aroma do pan recén feito e o sabor do artesanal.",
+    "contact": "Contacto",
+    "copyright": "© {year} Panadería e Pastelería Ana · Todos os dereitos reservados",
+    "designedBy": "Deseñado e desenvolvido por"
+  },
+  "pages": {
+    "index": {
+      "title": "Panadería Ana | Pan e pastelería artesanal en Cee",
+      "description": "Panadería e pastelería artesanal en Cee (A Coruña). Pan, bolería, tartas e empanadas de elaboración propia.",
+      "hero": {
+        "title": "Panadería Ana",
+        "subtitle": "Produto artesán. Elaboración propia.",
+        "cta": "Ler máis",
+        "prev": "Anterior",
+        "next": "Seguinte",
+        "slides": [
+          { "img": "barros", "alt": "Empanada galega tradicional" },
+          { "img": "bolos", "alt": "Bolos artesáns recén forneados" },
+          { "img": "bolos_2", "alt": "Bolería variada artesanal" },
+          { "img": "stgmz", "alt": "Tarta de Santiago con cruz" },
+          { "img": "panpasas", "alt": "Pan con pasas caseiro" },
+          { "img": "queixo", "alt": "Tarta de queixo artesanal" },
+          { "img": "pasteles", "alt": "Pasteis caseiros variados" }
+        ]
+      },
+      "about": {
+        "eyebrow": "O noso produto",
+        "title": "Artesanal, cos mellores ingredientes.",
+        "text": "Elaboramos cada un dos nosos produtos como se fixeron toda a vida, con tempo, agarimo e materias primas seleccionadas.",
+        "points": ["Bolería e folla", "Pans variados", "Tartas e pasteis", "Empanadas e pizzas"],
+        "cta": "Ver máis",
+        "img1Alt": "Tarta de queixo artesanal",
+        "img2Alt": "Pastel de nata caseiro"
+      },
+      "specialties": {
+        "eyebrow": "Especialidades",
+        "title": "Sabores artesáns, do noso obradoiro para o mundo.",
+        "items": [
+          { "badge": "Sabor único", "name": "Tarta galega", "desc": "Base de améndoa con queixo do país!", "img": "tartagallega4", "href": "tartagallega.html" },
+          { "badge": "Tradición galega", "name": "Tarta de Santiago", "desc": "Tradición galega en cada anaco.", "img": "stg", "href": "tartadesantiago.html" },
+          { "badge": "Cremosa e artesanal", "name": "Tarta de queixo", "desc": "Cremosa, suave e forneada amodo.", "img": "queixo_3", "href": "tartadequeso.html" },
+          { "badge": "Tradición galega", "name": "Larpeira", "desc": "O auténtico sabor da repostería tradicional.", "img": "larpeira", "href": "larpeira.html" }
+        ],
+        "soon": { "title": "Proximamente máis", "text": "Estamos forneando novas delicias…" }
+      },
+      "services": {
+        "eyebrow": "Os nosos servizos",
+        "title": "Que che podemos ofrecer?",
+        "text": "Produtos artesanais, descansos acolledores, momentos inesquecibles…",
+        "points": [
+          { "icon": "check", "label": "Produtos de calidade" },
+          { "icon": "cake", "label": "Produtos personalizados" },
+          { "icon": "coffee", "label": "Cafetería" },
+          { "icon": "truck", "label": "Venda por xunto" }
+        ],
+        "cta": "Ver máis",
+        "img1Alt": "Café e bolería fresca",
+        "img2Alt": "Pastel Selva Negra"
+      }
+    },
+    "producto": {
+      "title": "Os nosos produtos | Panadería Ana",
+      "description": "Empanadas, bolería, tartas, pasteis e café artesán en Panadería Ana, Cee.",
+      "pagehead": { "title": "Os nosos produtos", "parent": "Inicio", "parentHref": "index.html" },
+      "sections": [
+        {
+          "id": "empanadas", "alt": true,
+          "media": [{ "img": "empanada", "alt": "Empanada galega artesanal" }],
+          "eyebrow": "Empanadas galegas",
+          "title": "O sabor da tradición galega",
+          "body": "<p>As nosas empanadas caseiras prepáranse con masa fina e crocante, e recheos elaborados con produtos locais. Podes elixir entre <strong>zamburiñas</strong>, <strong>polbo</strong>, <strong>bacallau</strong>, <strong>carne</strong>, <strong>atún</strong> ou mesmo <strong>mazá</strong> para un toque doce. Cada unha reflicte o sabor auténtico da Costa da Morte.</p>"
+        },
+        {
+          "id": "empanadillas",
+          "media": [{ "img": "empanadillas", "alt": "Empanadillas variadas" }],
+          "eyebrow": "Empanadillas",
+          "title": "Saborosas, prácticas e sempre caseiras",
+          "body": "<p>Perfectas para levar ou gozar no momento, as nosas empanadillas prepáranse coa mesma masa caseira que as empanadas grandes. Dispoñibles en sabores clásicos como <strong>xamón e queixo</strong>, <strong>carne</strong> e <strong>atún</strong>. Pequenas en tamaño, grandes en sabor.</p>"
+        },
+        {
+          "id": "bolleria", "alt": true, "reverse": true,
+          "media": [{ "img": "bolleria", "alt": "Croissants e napolitanas" }, { "img": "croissant", "alt": "Doces e follas artesanais" }],
+          "eyebrow": "Bolería e follas",
+          "title": "Recén feitos cada mañá",
+          "body": "<p>Preparamos a diario <strong>croissants</strong>, <strong>napolitanas</strong>, <strong>ensaimadas</strong> e unha gran variedade de doces de folla. Todos elaborados con manteiga de calidade e un toque de cariño, ideais para acompañar os nosos cafés ou levar á casa.</p>"
+        },
+        {
+          "id": "tartas",
+          "media": [{ "img": "tartas", "alt": "Tartas de aniversario personalizadas" }],
+          "eyebrow": "Tartas e biscoitos",
+          "title": "Endulzamos os teus momentos máis especiais",
+          "body": "<p>Elaboramos <strong>biscoitos caseiros</strong> e <strong>tartas personalizadas</strong> para aniversarios, celebracións ou calquera ocasión especial. Podes elixir sabores, recheos e decoración ao teu gusto. Cada tarta prepárase de forma artesanal, con ingredientes frescos e naturais.</p>",
+          "cta": { "label": "Encarga a túa tarta", "href": "contacto.html" }
+        },
+        {
+          "id": "pasteles", "alt": true, "reverse": true,
+          "media": [{ "img": "pastelchoco_1", "alt": "Pasteis individuais" }, { "img": "pastelnata2", "alt": "Pasteis variados" }],
+          "eyebrow": "Pasteis",
+          "title": "Pequenas delicias para calquera momento",
+          "body": "<p>Dende pasteis de crema ata milfollas ou tartaletas de froita, en Panadería Ana elaboramos unha gran variedade de doces con receitas tradicionais. Perfectos para acompañar o café ou gozar nunha sobremesa tranquila en Cee.</p>"
+        },
+        {
+          "id": "cafes",
+          "media": [{ "img": "cafes2", "alt": "Café" }],
+          "eyebrow": "Cafés",
+          "title": "O teu momento de descanso",
+          "body": "<p>Ademais dos nosos produtos de forno, servimos <strong>cafés recén feitos</strong> para tomar no noso local. Unha opción ideal para compartir un momento agradable.</p>"
+        }
+      ],
+      "cta": { "title": "Descobre as nosas especialidades máis queridas", "label": "Ver especialidades", "href": "tartadequeso.html" }
+    },
+    "servicios": {
+      "title": "Os nosos servizos | Panadería Ana",
+      "description": "Produtos de calidade, encargos personalizados, cafetería e venda por xunto en Panadería Ana, Cee.",
+      "pagehead": { "title": "Os nosos servizos", "parent": "Inicio", "parentHref": "index.html" },
+      "quality": {
+        "eyebrow": "Produtos de calidade",
+        "title": "Pan e doces feitos con agarimo",
+        "text": "Dende as nosas primeiras forneadas, a calidade foi a nosa prioridade. Usamos ingredientes seleccionados e técnicas tradicionais que garanten un sabor e textura únicos.",
+        "points": ["Pan diario artesanal", "Bolería tradicional", "Pasteis caseiros", "Receitas de sempre"],
+        "img1Alt": "Pan artesanal",
+        "img2Alt": "Bolería caseira"
+      },
+      "personalized": {
+        "eyebrow": "Produtos personalizados",
+        "title": "Crea algo único para a túa ocasión especial",
+        "text": "Encargos a medida para celebracións, aniversarios e eventos. Personaliza a túa tarta, elixe sabores, recheos e decoración.",
+        "point": "Consulta connosco e deseñamos a túa idea xuntos.",
+        "cta": "Facer un encargo",
+        "imgAlt": "Tartas personalizadas"
+      },
+      "cafeteria": {
+        "eyebrow": "Cafetería",
+        "title": "O teu recuncho para desconectar",
+        "text": "Aromas, sabor e tranquilidade. Toma un café recén feito acompañado das nosas especialidades doces ou salgadas.",
+        "quote": "O café é a mellor escusa para reunirse.",
+        "quoteAuthor": "Proverbio etíope",
+        "imgAlt": "Cafetería acolledora"
+      },
+      "wholesale": {
+        "eyebrow": "Venda por xunto",
+        "title": "Colabora connosco",
+        "text": "Abastecemos a bares, restaurantes e supermercados da zona cos nosos produtos artesáns.",
+        "point": "Únete a quen xa confía no noso obradoiro.",
+        "cta": "Contactar",
+        "imgAlt": "Distribución local"
+      },
+      "cta": {
+        "title": "Queres saber máis ou facer un pedido especial?",
+        "text": "Chámanos ou visítanos, estaremos encantados de atenderte.",
+        "ordersLabel": "Encargos"
+      }
+    },
+    "nosotros": {
+      "title": "Sobre nós | Panadería Ana",
+      "description": "Coñece a historia de Panadería Ana, unha panadería-pastelería artesanal con raíces en Mazaricos e corazón en Cee.",
+      "pagehead": { "title": "Sobre nós", "parent": "Inicio", "parentHref": "index.html" },
+      "history": {
+        "badge": "Dende 2011",
+        "eyebrow": "A nosa historia",
+        "title": "Unha historia amasada con cariño e raíces",
+        "videoAlt": "Obradoiro artesanal Panadería Ana",
+        "body": "<p>Panadería Ana naceu en <strong>2011</strong>, coa ilusión de levar a cada fogar o sabor do auténtico. Os nosos primeiros pasos comezaron en <strong>A Picota</strong>, un pequeno recuncho onde, con forno propio e mans incansables, demos forma ao que hoxe somos: unha familia unida polo amor ao pan e á repostería artesanal.</p><p>Hai 11 anos, no <strong>2014</strong>, abrimos o noso local de <strong>Cee</strong>, un pobo que nos acolleu con cariño dende o primeiro día. Aquí atopamos o noso fogar e aquí seguimos, co mesmo empeño de sempre: elaborar cada pan, cada empanada e cada doce coma se fose o primeiro.</p><p>Este ano marcou un momento moi especial: trasladamos o noso <strong>obradoiro dende Mazaricos</strong> directamente á tenda en Cee. Xa non só forneamos para o pobo, senón que o facemos <em>dende</em> o corazón do pobo. Cada aroma que sae do forno é unha pequena historia compartida cos nosos veciños.</p>"
+      },
+      "philosophy": {
+        "eyebrow": "Filosofía artesanal",
+        "title": "Elaboración propia, de principio a fin",
+        "imgAlt": "Pan tradicional de Cee",
+        "body": "<p>En Panadería Ana cremos no feito coas mans e o corazón. Os nosos produtos son froito do traballo diario, de receitas que pasaron de xeración en xeración e da dedicación a cada detalle. Non hai présa no noso obradoiro: cada masa necesita o seu tempo, e nós dámosllo.</p><p>Gústanos pensar que o pan non só alimenta, senón que tamén une. Por iso, cada día acendemos o forno coa ilusión de compartir un anaquiño da nosa historia con quen pasa pola porta.</p>",
+        "points": [
+          { "icon": "heart", "label": "Paixón polo artesanal" },
+          { "icon": "flower", "label": "Ingredientes naturais" },
+          { "icon": "people", "label": "Proximidade co cliente" },
+          { "icon": "check", "label": "Sabor de sempre" }
+        ]
+      },
+      "cee": {
+        "title": "Cee: o noso fogar, a nosa inspiración",
+        "text": "Cee non é só o lugar onde estamos, é parte do que somos. Aquí medramos, fixemos amizades e compartimos miles de historias arredor do pan. Cada cliente que entra pola porta lémbranos por que comezamos e por que seguimos: porque aquí, en cada barra, en cada doce, vai un anaco do noso pobo.",
+        "quote": "Venturoso aquel a quien el cielo dio un pedazo de pan sin que le quede obligación de agradecérselo a otro que al mismo cielo.",
+        "quoteAuthor": "Cervantes"
+      }
+    },
+    "contacto": {
+      "title": "Contacto | Panadería Ana",
+      "description": "Contacta con Panadería Ana en Cee: teléfono, WhatsApp, horario e localización.",
+      "pagehead": { "title": "Contacta connosco", "parent": "Inicio", "parentHref": "index.html" },
+      "intro": {
+        "eyebrow": "Contacta connosco",
+        "title": "Se tes algunha consulta, por favor contacta connosco",
+        "text": "Estamos dispoñibles no noso local de Cee, por teléfono, ou por WhatsApp. Non dubides en poñerte en contacto!",
+        "whatsapp": "Enviar mensaxe por WhatsApp"
+      },
+      "schedule": {
+        "title": "Horario de apertura",
+        "rows": [
+          { "day": "Luns", "hours": "Pechado", "closed": true },
+          { "day": "Martes", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Mércores", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Xoves", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Venres", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Sábado", "hours": "9:00 – 14:30 / 16:00 – 21:00" },
+          { "day": "Domingo", "hours": "9:00 – 14:30" }
+        ]
+      },
+      "map": { "title": "Atópanos aquí" },
+      "dev": {
+        "title": "Gústache a nosa web?",
+        "text": "Se tes algunha consulta sobre a páxina ou desexas unha web similar para o teu negocio, non dubides en poñerte en contacto co desenvolvedor."
+      }
+    },
+    "tartadequeso": {
+      "title": "Tarta de queixo | Panadería Ana",
+      "description": "Descobre a famosa tarta de queixo de Panadería Ana en Cee: cremosa, artesanal e cun toque galego inconfundible.",
+      "pagehead": { "title": "Tarta de queixo", "parent": "Especialidades", "parentHref": "#" },
+      "quote": { "text": "Unha sobremesa sen queixo é coma unha doncela á que lle falta un ollo.", "author": "Jean Anthelme Brillat-Savarin" },
+      "history": {
+        "eyebrow": "Tradición Galega",
+        "title": "Unha historia de sabor, dende o corazón de Galicia",
+        "imgAlt": "Mosaico romano de panadeiros",
+        "caption": "Mosaico romano que representa a panadeiros facendo unha tarta de queixo en Pompeia, circa 70 d.C.",
+        "body": "<p>Aínda que a tarta de queixo ten raíces antigas (xa os gregos ofrecían cheesecakes aos atletas olímpicos), en Galicia atopou un carácter propio. A combinación de queixos locais, ovos frescos e o agarimo artesanal déronlle unha identidade única.</p><p>En Panadería Ana seguimos esa tradición: forneamos cada tarta coma se fose a primeira, coidando a textura cremosa e o sabor equilibrado que tanto nos representa.</p>"
+      },
+      "flavors": {
+        "headEyebrow": "Especialidades",
+        "headTitle": "Catro versións para namorarte",
+        "headSub": "Descobre os nosos sabores artesanais de tarta de queixo.",
+        "eyebrow": "Sabores especiais",
+        "title": "Un toque moderno",
+        "body": "<p>En Panadería Ana cremos que a tradición non está reñida coa innovación. Cada tarta nace dunha receita caseira que coidamos con agarimo: ingredientes frescos, forneado paciente e esa textura cremosa que nos caracteriza. A partir desa base auténtica, damos un paso máis para sorprender a quen busca algo especial.</p><p>Por iso creamos as nosas cheesecakes especiais: <strong>Lotus</strong>, coa súa dozura especiada; <strong>Pistacho</strong>, delicada e cremosa; <strong>Kinder</strong>, para os amantes do chocolate; e <strong>Froitos Vermellos</strong>, fresca e afroitada. Un toque moderno que respecta a esencia da tarta de queixo caseira e celebra a nosa paixón por fornear.</p>",
+        "images": [
+          { "img": "queixo-l", "alt": "Cheesecake Lotus" },
+          { "img": "queixo-p", "alt": "Cheesecake Pistacho" },
+          { "img": "queixo_f1", "alt": "Cheesecake Froitos Vermellos" }
+        ]
+      },
+      "stats": {
+        "title": "Sabías que…?",
+        "text": "O verán pasado a nosa tarta de queixo conquistou a centos de persoas en Cee. E os números falan por si sós!",
+        "items": [
+          { "num": "540", "label": "Tartas enteiras vendidas<br>durante todo o verán" },
+          { "num": "2.250", "label": "Porcións individuais<br>na tempada" }
+        ]
+      },
+      "cta": { "title": "Pero non é a nosa única tarta galega caseira…", "label": "Ver tarta galega", "href": "tartagallega.html" }
+    },
+    "tartadesantiago": {
+      "title": "Tarta de Santiago | Panadería Ana",
+      "description": "Descobre a auténtica Tarta de Santiago en Panadería Ana: historia, tradición e sabor con améndoa 100% galega.",
+      "pagehead": { "title": "Tarta de Santiago", "parent": "Especialidades", "parentHref": "#" },
+      "quote": { "text": "A sinxeleza é a máxima sofisticación.", "author": "Leonardo da Vinci" },
+      "history": {
+        "eyebrow": "Herdanza Compostelá",
+        "title": "Unha receita que naceu no Camiño",
+        "imgAlt": "Pedro Portocarrero, clérigo e bispo",
+        "caption": "Pedro Portocarrero, clérigo e bispo.",
+        "body": "<p>O primeiro rexistro histórico da tarta de Santiago é do clérigo Pedro Portocarrero, cando visitou a Universidade de Santiago no 1577. Desde entón, converteuse nun símbolo da cidade. Viaxaba nas alforxas de peregrinos que percorrían o Camiño e pronto se converteu en símbolo da hospitalidade galega. A súa receita foi documentada xa no século XVI.</p><p>O máis extraordinario é a súa sinxeleza: <strong>améndoa moída, azucre e ovo</strong>. Nada máis. Non leva fariña de trigo nin conservantes. E en Panadería Ana damos un paso máis: usamos <strong>100% fariña de améndoa natural galega</strong>, o que realza o seu sabor orixinal e a súa textura zumarenta.</p>"
+      },
+      "making": {
+        "headEyebrow": "Elaboración artesanal",
+        "headTitle": "Tres ingredientes. Cen anos de tradición.",
+        "headSub": "A receita orixinal non precisa de adornos: só boa améndoa, azucre e ovos frescos.",
+        "badge": "O noso panadeiro, José Manuel",
+        "videoAlt": "Elaboración artesanal da tarta de Santiago",
+        "subtitle": "A nosa maneira de facela",
+        "points": [
+          "100% fariña de améndoa.",
+          "Ovos frescos de galiñas locais.",
+          "O punto xusto de azucre.",
+          "Forneado lento e uniforme."
+        ],
+        "body": "<p>O que fai verdadeiramente único ao noso produto é o respecto absoluto pola receita tradicional. Elaboramos as nosas tartas exclusivamente con améndoa moída da mellor calidade, sen recorrer a fariñas engadidas nin ingredientes que reduzan custos a expensas do sabor. Cada bocado conserva a autenticidade de séculos de historia repostería galega.</p><p>Nun mundo no que a produción industrial prima a rapidez sobre a calidade, nós eliximos o camiño oposto: o da artesanía. Cada tarta é elaborada a man, con paciencia e coidado, mantendo o equilibrio perfecto entre textura, aroma e sabor. Así garantimos unha experiencia única que transporta directamente ás raíces máis profundas de Galicia.</p><p>Moitos peregrinos e turistas que pasan por Cee buscan un recordo auténtico, un pedazo de Galicia que poidan levar consigo aos seus fogares. A nosa tarta de Santiago é moito máis que unha sobremesa: é un símbolo, un testemuño de tradición, hospitalidade e dedicación.</p><p>Por iso, poñemos todo o noso agarimo e esforzo en cada elaboración. Seleccionamos coidadosamente as materias primas, controlamos cada etapa do proceso e coidamos cada detalle, desde a masa ata o empaquetado final. Queremos que, ao probala, non só goces do seu sabor inconfundible, senón tamén da historia e a alma que encerra.</p><p>Xa sexa como agasallo, como recordo ou simplemente como un capricho doce, a nosa tarta de Santiago é unha invitación para saborear Galicia co corazón.</p>"
+      },
+      "mazaricos": {
+        "title": "A nosa creación: Tarta de Mazaricos",
+        "body": "Unha versión especial da Tarta de Santiago, con <strong>noces galegas</strong> e un toque de <strong>mel local</strong>. Unha homenaxe ás nosas orixes na Picota e á natureza que nos rodea.",
+        "imgAlt": "Tarta de Mazaricos"
+      },
+      "stats": {
+        "title": "Sabías que…?",
+        "text": "As nosas tartas de améndoa viaxaron lonxe. Turistas e peregrinos leváronas aos seus fogares ata Inglaterra, Alemaña, Estados Unidos, Corea…",
+        "items": [
+          { "num": "630", "label": "Tartas de améndoa vendidas", "sub": "no verán de 2025" }
+        ]
+      },
+      "cta": { "title": "Queres saber como chegamos ata aquí?", "label": "Ver a nosa historia", "href": "nosotros.html" }
+    },
+    "larpeira": {
+      "title": "Larpeira | Panadería Ana",
+      "description": "Descobre a auténtica Larpeira en Panadería Ana: tradición galega en cada rebanada do noso pan artesán.",
+      "pagehead": { "title": "Larpeira", "parent": "Especialidades", "parentHref": "#" },
+      "quote": { "text": "Non é xa o cativo currunchiño<br>que din escolas vellas:<br>Galicia é infinda!", "author": "Florencio Delgado Gurriarán" },
+      "history": {
+        "eyebrow": "Historia da Larpeira",
+        "title": "Un doce con raíces galegas",
+        "imgAlt": "Larpeira galega tradicional",
+        "body": "<p>A <strong>larpeira galega</strong> naceu das antigas bolas doces que se facían con manteiga e anís en distintas zonas de Galicia. Co tempo, fóronse engadindo a crema pasteleira e o almíbar de anís que hoxe a fan tan especial.</p><p>Contan que cara a <strong>1927</strong>, nunha pastelería de Cambre, comezaron a facerse os famosos <strong>rombos</strong> na masa, unha seña de identidade que lle dá o seu aspecto único e axuda a repartir mellor a crema. Desde entón, esta sobremesa converteuse en todo un clásico das nosas festas.</p>"
+      },
+      "galicia": {
+        "eyebrow": "Tradición galega",
+        "title": "O pan doce das festas galegas",
+        "videoAlt": "Larpeira tradicional galega",
+        "caption": "Larpeira tradicional, símbolo da repostería galega.",
+        "body": "<p>A Larpeira é un dos tesouros máis doces da repostería tradicional galega. Orixinaria das zonas rurais, este pan doce elaborábase tradicionalmente para celebracións especiais, festas patronais e eventos familiares importantes.</p><p>O seu nome provén do galego «larpeira», que fai referencia á súa textura esponxosa e o seu sabor lixeiramente doce. O que distingue a nosa Larpeira é o uso de <strong>manteiga da terra</strong> e <strong>ovos de galiñas campeiras</strong>, que lle dan esa cor dourada característica e unha miga tenra e aromática.</p><p>En Panadería Ana respectamos a receita tradicional pero engadimos o noso toque persoal: un leve toque de <strong>anisete</strong> que realza o seu aroma sen alterar a súa esencia tradicional.</p>"
+      },
+      "sweet": {
+        "title": "Un toque doce",
+        "body": "Unha versión especial da nosa Larpeira tradicional, cun delicioso <strong>recheo de nata montada fresca</strong> que achega unha textura suave e un sabor irresistible. Ideal para celebracións, merendas ou para gozar dun doce momento galego.",
+        "imgAlt": "Larpeira chea de nata"
+      },
+      "stats": {
+        "title": "Sabías que…?",
+        "text": "A <strong>Larpeira galega</strong> é un dos doces máis típicos da <em>Noite de San Xoán</em>, cando as fogueiras iluminan as praias e prazas de Galicia cada 23 de xuño.",
+        "items": [
+          { "pre": "máis de", "num": "80", "label": "Larpeiras vendidas", "sub": "na tempada de San Xoán" }
+        ]
+      },
+      "cta": { "title": "Apetéceche gozar dunha Larpeira recén feita?", "label": "Fai o teu encargo", "href": "contacto.html" }
+    },
+    "tartagallega": {
+      "title": "Tarta galega | Panadería Ana",
+      "description": "Descobre a Tarta galega de Panadería Ana: unha fusión única de tarta de améndoa tradicional con queixo semicurado galego.",
+      "pagehead": { "title": "Tarta galega", "parent": "Especialidades", "parentHref": "#" },
+      "quote": { "text": "¡Nin rosiñas brancas, nin claveles roxos!<br>Eu venero as froliñas dos toxos.", "author": "Antonio Noriega Varela, As froliñas dos toxos" },
+      "history": {
+        "eyebrow": "Tradición galega",
+        "title": "A esencia de Galicia en cada bocado",
+        "imgAlt": "Tarta galega artesanal",
+        "caption": "A nosa Tarta galega: a fusión perfecta entre tradición e innovación.",
+        "body": "<p>A Tarta galega é a nosa creación máis especial, unha fusión que celebra a tradición pasteleira galega: a tarta de améndoa, con séculos de historia na nosa rexión, e o queixo semicurado galego, co seu sabor intenso e carácter único.</p><p>En Panadería Ana quixemos unir dúas das nosas especialidades nunha sobremesa representativa da nosa propia terra: a rústica base de améndoa combinada co doce cariño do queixo cremoso.</p>"
+      },
+      "harmony": {
+        "headTitle": "Dúas tradicións, unha tarta",
+        "headSub": "A perfecta harmonía entre a tarta de améndoa e o queixo galego.",
+        "eyebrow": "Sabedoría tradicional",
+        "title": "Contraste de sabores e texturas",
+        "imgAlt": "Detalle da Tarta galega",
+        "caption": "O contraste perfecto: base de améndoa tradicional e capa de queixo semicurado galego.",
+        "body": "<p>A nosa Tarta galega comeza cunha base de tarta de améndoa tradicional, elaborada con améndoas moídas da mellor calidade, ovos frescos e ese toque especial que perfeccionamos ao longo dos anos. Esta base proporciona unha textura húmida e rica, hidratándose co queixo.</p><p>Sobre esta base, engadimos unha capa de tarta de queixo elaborada con queixos do país, incluíndo queixo semicurado galego que sobe durante o forneado, creando unha esponxosidade única, similar ao mousse. O resultado é un contraste sublime: a dozura da améndoa co punto salgado do queixo, a textura densa da tarta coa esponxosidade da tarta de queixo.</p>"
+      },
+      "tradition": {
+        "eyebrow": "Tradición e Modernidade",
+        "title": "Unha homenaxe ás nosas raíces",
+        "imgAlt": "Tarta galega tradicional",
+        "body": "<p>Mentres que as nosas tartas de queixo modernas (Lotus, Pistacho, Kinder e Froitos Vermellos) exploran novas combinacións de sabores, a Tarta galega é o noso tributo ao auténticamente galego.</p><p>Esta creación non segue tendencias internacionais, senón que se arraiga no noso: a améndoa dos bosques galegos e o queixo das nosas vacas, criadas nos verdes pastos da nosa terra. É a resposta a quen busca o sabor de Galicia en estado puro.</p>",
+        "points": [
+          { "icon": "flower", "title": "Base de améndoa zumarenta", "text": "Elaborada coas mesmas améndoas exquisitas das nosas tartas de Santiago, creando unha textura húmida e rica que se hidrata perfectamente co queixo." },
+          { "icon": "cheese", "title": "Queixo do país", "text": "Queixo semicurado galego, outorgando un sabor máis intenso e unha experiencia que ningún amante do queixo se pode perder." }
+        ]
+      },
+      "cta": {
+        "title": "Descobre as nosas outras especialidades galegas…",
+        "buttons": [
+          { "label": "Tartas de queixo", "href": "tartadequeso.html" },
+          { "label": "Tartas de Santiago", "href": "tartadesantiago.html" }
+        ]
+      }
+    }
+  }
+}

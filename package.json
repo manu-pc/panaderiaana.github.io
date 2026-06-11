@@ -1,0 +1,17 @@
+{
+  "name": "panaderiaana",
+  "version": "2.0.0",
+  "description": "Static multilingual site for Panadería Ana (Cee, A Coruña)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "optimize": "node optimize-media.js",
+    "build": "node build.js",
+    "serve": "python3 -m http.server 8000 --directory dist",
+    "dev": "node build.js && python3 -m http.server 8000 --directory dist"
+  },
+  "devDependencies": {
+    "nunjucks": "^3.2.4",
+    "sharp": "^0.33.5"
+  }
+}

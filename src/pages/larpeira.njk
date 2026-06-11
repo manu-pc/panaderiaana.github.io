@@ -1,0 +1,76 @@
+{% extends "layouts/base.njk" %}
+{% block body %}
+{% include "partials/pagehead.njk" %}
+
+<section class="section" style="padding-bottom:0">
+  <div class="container reveal">
+    <blockquote class="quote"><p>{{ content.quote.text | safe }}</p><footer>{{ content.quote.author }}</footer></blockquote>
+  </div>
+</section>
+
+{% set h = content.history %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="feature feature--media-40">
+      <div class="feature__media reveal">
+        <a href="../img/larpeira.webp" data-lightbox data-title="{{ h.imgAlt }}"><img src="../img/larpeira.webp" alt="{{ h.imgAlt }}" loading="lazy"></a>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ h.eyebrow }}</p>
+        <h2>{{ h.title }}</h2>
+        {{ h.body | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set g = content.galicia %}
+<section class="section section--alt" style="padding-top:0">
+  <div class="container">
+    <div class="feature feature--reverse">
+      <div class="feature__media reveal">
+        <div class="framed">
+          <video src="../img/larpeira.mp4" poster="../img/larpeira-poster.webp" autoplay muted loop playsinline aria-label="{{ g.videoAlt }}"></video>
+        </div>
+        <p class="feature__caption">{{ g.caption }}</p>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ g.eyebrow }}</p>
+        <h2>{{ g.title }}</h2>
+        {{ g.body | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set s = content.sweet %}
+<section class="section section--brand center">
+  <div class="container reveal">
+    <h2>{{ s.title }}</h2>
+    <p class="lead measure mx-auto">{{ s.body | safe }}</p>
+    <div style="max-width:520px;margin:2rem auto 0">
+      <img src="../img/larpeira_rellena_nata.webp" alt="{{ s.imgAlt }}" loading="lazy" style="border-radius:var(--radius);box-shadow:var(--shadow)">
+    </div>
+  </div>
+</section>
+
+{% set st = content.stats %}
+<section class="section section--alt center">
+  <div class="container reveal">
+    <h2>{{ st.title }}</h2>
+    <p class="lead measure mx-auto">{{ st.text | safe }}</p>
+    <div class="stats" style="margin-top:2rem">
+      {% for it in st.items %}
+      <div><div class="stat__num"><span style="font-size:1.1rem;font-weight:500">{{ it.pre }}</span> {{ it.num }}</div><p>{{ it.label }}</p><p class="muted">{{ it.sub }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent center">
+  <div class="container reveal">
+    <h2>{{ content.cta.title }}</h2>
+    <a class="btn btn--light" href="{{ content.cta.href }}">{{ content.cta.label }}</a>
+  </div>
+</section>
+{% endblock %}
