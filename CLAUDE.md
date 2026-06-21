@@ -36,8 +36,9 @@ There are no tests. To verify a change: `npm run build`, then `npm run serve` an
 - generates per-page `hreflang`/`canonical` tags and the language-selector links from the
   page registry, so cross-language SEO links can't drift out of sync (a recurring bug in the
   old hand-maintained version);
-- emits the root `dist/index.html` redirect (`src/redirect.njk`) and copies `assets/` → `dist/`,
-  `img/` → `dist/img/`, plus `404.html`, `CNAME` and `.well-known/`.
+- emits the root `dist/index.html` redirect (`src/redirect.njk`) and copies `assets/css` →
+  `dist/css`, `assets/js` → `dist/js`, `img/` → `dist/img/`, `.well-known/`, plus `404.html`
+  and `CNAME` (the icon sprite is inlined, not copied).
 
 The SVG icon sprite (`assets/icons/sprite.svg`) is read by `build.js` and injected inline at
 the top of every page; templates reference icons with `<svg class="icon"><use href="#i-..."/></svg>`.
