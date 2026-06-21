@@ -17,6 +17,7 @@
     "santiago": "Tarta de Santiago",
     "larpeira": "Larpeira",
     "tartagallega": "Tarta galega",
+    "panchocolatenaranja": "Pan de chocolate e laranxa",
     "soon": "Proximamente máis",
     "new": "NOVO",
     "menu": "Menú",
@@ -62,6 +63,7 @@
         "eyebrow": "Especialidades",
         "title": "Sabores artesáns, do noso obradoiro para o mundo.",
         "items": [
+          { "badge": "Novidade", "name": "Pan de chocolate e laranxa", "desc": "Masa de cacao con trociños de laranxa doce.", "img": "panchocolatenaranja1", "href": "panchocolatenaranja.html" },
           { "badge": "Sabor único", "name": "Tarta galega", "desc": "Base de améndoa con queixo do país!", "img": "tartagallega4", "href": "tartagallega.html" },
           { "badge": "Tradición galega", "name": "Tarta de Santiago", "desc": "Tradición galega en cada anaco.", "img": "stg", "href": "tartadesantiago.html" },
           { "badge": "Cremosa e artesanal", "name": "Tarta de queixo", "desc": "Cremosa, suave e forneada amodo.", "img": "queixo_3", "href": "tartadequeso.html" },
@@ -381,6 +383,51 @@
           { "label": "Tartas de Santiago", "href": "tartadesantiago.html" }
         ]
       }
+    },
+    "panchocolatenaranja": {
+      "title": "Pan de chocolate e laranxa | Panadería Ana",
+      "description": "Descobre o noso Pan de chocolate e laranxa: unha masa artesá con cacao e trociños de laranxa doce, fornada no obradoiro de Panadería Ana.",
+      "pagehead": { "title": "Pan de chocolate e laranxa", "parent": "Especialidades", "parentHref": "#" },
+      "history": {
+        "eyebrow": "A nosa especialidade",
+        "title": "Cacao e laranxa en cada rebanda",
+        "imgAlt": "Pan de chocolate e laranxa artesán",
+        "body": "<p>O noso <strong>Pan de chocolate e laranxa</strong> nace do gusto por unir dous sabores que se entenden á perfección: o <strong>cacao puro</strong>, amasado dentro da propia masa, e os <strong>trociños de laranxa doce</strong> que se reparten por toda a miga.</p><p>Non é un biscoito nin un doce de pastelaría: é un <strong>pan de verdade</strong>, feito coa mesma masa e o mesmo coidado que o resto dos nosos pans. De codia crocante e miga tenra, o cacao achega cor e aroma e a laranxa deixa ese punto fresco e afroitado que sorprende en cada bocado.</p>"
+      },
+      "craft": {
+        "eyebrow": "O obradoiro",
+        "title": "A mesma masa, o mesmo coidado",
+        "videoAlt": "Elaboración do pan de chocolate e laranxa",
+        "caption": "Amasamos o cacao na masa e traballamos cada peza a man.",
+        "body": "<p>O Pan de chocolate e laranxa elabórase <strong>exactamente igual que o resto dos nosos pans</strong>: coas mesmas materias primas e a mesma <strong>fermentación longa en frío</strong> que desenvolve o sabor, mellora a conservación e fai a miga máis lixeira e dixestiva.</p><p>O cacao incorpórase durante o amasado para que tinga a masa por completo, e os <strong>anacos de laranxa</strong> engádense ao final, a man, para que queden enteiros e ben repartidos. A mesma calidade de pan de sempre, só que cun toque larpeiro.</p>"
+      },
+      "orange": {
+        "headEyebrow": "Dous sabores, un pan",
+        "headTitle": "O equilibrio entre o cacao e a laranxa",
+        "headSub": "Intenso pero nada empalagoso: pan para o almorzo, a merenda ou o café.",
+        "eyebrow": "Sabor e textura",
+        "title": "Intenso, afroitado e artesán",
+        "imgAlt": "Detalle da miga do pan de chocolate e laranxa",
+        "caption": "Miga tenra e esponxosa, coa cor do cacao.",
+        "body": "<p>O segredo está no contraste: o <strong>amargor suave do cacao</strong> equilíbrase co <strong>dozor cítrico da laranxa</strong>, sen que ningún tape o outro. O resultado é un pan larpeiro pero lixeiro, perfecto para mollar no café con leite ou gozar tal cal.</p>",
+        "points": [
+          { "icon": "cake", "title": "Cacao na masa", "text": "Cacao amasado dentro do pan, que lle dá cor, aroma e un sabor intenso pero equilibrado." },
+          { "icon": "flower", "title": "Laranxa doce", "text": "Trociños de laranxa repartidos a man que achegan frescura e un punto cítrico en cada rebanda." }
+        ]
+      },
+      "sweet": {
+        "title": "A mellor forma de gozalo",
+        "body": "Está delicioso recén feito, pero gaña aínda máis <strong>lixeiramente tostado e cun chorriño de aceite de oliva virxe extra</strong>, que realza o aroma da laranxa e o cacao. Ideal para o almorzo, a merenda ou para acompañar un bo café.",
+        "imgAlt": "Pan de chocolate e laranxa en rebandas"
+      },
+      "stats": {
+        "title": "Sabías que…?",
+        "text": "A unión do <strong>chocolate</strong> e a <strong>laranxa</strong> é un dos maridaxes máis clásicos da repostaría: o cítrico realza o cacao e rebaixa o seu amargor, por iso funcionan tan ben xuntos.",
+        "items": [
+          { "pre": "máis de", "num": "12 h", "label": "de fermentación", "sub": "para unha miga máis lixeira" }
+        ]
+      },
+      "cta": { "title": "Apetéceche probar o noso pan de chocolate e laranxa?", "label": "Fai o teu encargo", "href": "contacto.html" }
     }
   }
 }

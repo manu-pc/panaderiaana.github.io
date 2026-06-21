@@ -29,6 +29,7 @@ const PAGES = [
   { slug: 'tartadesantiago', template: 'pages/tartadesantiago.njk', nav: '',          head: 'stg-poster' },
   { slug: 'larpeira',        template: 'pages/larpeira.njk',        nav: '',          head: 'larpeira_rellena_nata' },
   { slug: 'tartagallega',    template: 'pages/tartagallega.njk',    nav: '',          head: 'tartagallega1' },
+  { slug: 'panchocolatenaranja', template: 'pages/panchocolatenaranja.njk', nav: '',     head: 'panchocolatenaranja1' },
 ];
 
 const env = nunjucks.configure('src', { autoescape: true, trimBlocks: true, lstripBlocks: true });

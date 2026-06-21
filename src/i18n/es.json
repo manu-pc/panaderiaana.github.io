@@ -17,6 +17,7 @@
     "santiago": "Tarta de Santiago",
     "larpeira": "Larpeira",
     "tartagallega": "Tarta gallega",
+    "panchocolatenaranja": "Pan de chocolate y naranja",
     "soon": "Próximamente más",
     "new": "NUEVO",
     "menu": "Menú",
@@ -62,6 +63,7 @@
         "eyebrow": "Especialidades",
         "title": "Sabores artesanos, de nuestro obrador para el mundo.",
         "items": [
+          { "badge": "Novedad", "name": "Pan de chocolate y naranja", "desc": "Masa de cacao con trocitos de naranja dulce.", "img": "panchocolatenaranja1", "href": "panchocolatenaranja.html" },
           { "badge": "Sabor único", "name": "Tarta gallega", "desc": "¡Base de almendra con queso del país!", "img": "tartagallega4", "href": "tartagallega.html" },
           { "badge": "Tradición gallega", "name": "Tarta de Santiago", "desc": "Tradición gallega en cada bocado.", "img": "stg", "href": "tartadesantiago.html" },
           { "badge": "Cremosa y artesana", "name": "Tarta de queso", "desc": "Cremosa, suave y horneada lentamente.", "img": "queixo_3", "href": "tartadequeso.html" },
@@ -381,6 +383,51 @@
           { "label": "Tartas de Santiago", "href": "tartadesantiago.html" }
         ]
       }
+    },
+    "panchocolatenaranja": {
+      "title": "Pan de chocolate y naranja | Panadería Ana",
+      "description": "Descubre nuestro Pan de chocolate y naranja: una masa artesana con cacao y trocitos de naranja confitada, horneada en el obrador de Panadería Ana.",
+      "pagehead": { "title": "Pan de chocolate y naranja", "parent": "Especialidades", "parentHref": "#" },
+      "history": {
+        "eyebrow": "Nuestra especialidad",
+        "title": "Cacao y naranja en cada rebanada",
+        "imgAlt": "Pan de chocolate y naranja artesano",
+        "body": "<p>Nuestro <strong>Pan de chocolate y naranja</strong> nace del gusto por unir dos sabores que se entienden a la perfección: el <strong>cacao puro</strong>, amasado dentro de la propia masa, y los <strong>trocitos de naranja dulce</strong> que se reparten por toda la miga.</p><p>No es un bizcocho ni un dulce de pastelería: es un <strong>pan de verdad</strong>, hecho con la misma masa y el mismo cuidado que el resto de nuestros panes. De corteza crujiente y miga tierna, el cacao aporta color y aroma y la naranja deja ese punto fresco y afrutado que sorprende en cada bocado.</p>"
+      },
+      "craft": {
+        "eyebrow": "El obrador",
+        "title": "La misma masa, el mismo cuidado",
+        "videoAlt": "Elaboración del pan de chocolate y naranja",
+        "caption": "Amasamos el cacao en la masa y trabajamos cada pieza a mano.",
+        "body": "<p>El Pan de chocolate y naranja se elabora <strong>exactamente igual que el resto de nuestros panes</strong>: con las mismas materias primas y la misma <strong>fermentación larga en frío</strong> que desarrolla el sabor, mejora la conservación y hace la miga más ligera y digestiva.</p><p>El cacao se incorpora durante el amasado para que tiña la masa por completo, y los <strong>trozos de naranja</strong> se añaden al final, a mano, para que queden enteros y bien repartidos. La misma calidad de pan de siempre, solo que con un toque goloso.</p>"
+      },
+      "orange": {
+        "headEyebrow": "Dos sabores, un pan",
+        "headTitle": "El equilibrio entre el cacao y la naranja",
+        "headSub": "Intenso pero nada empalagoso: pan para el desayuno, la merienda o el café.",
+        "eyebrow": "Sabor y textura",
+        "title": "Intenso, afrutado y artesano",
+        "imgAlt": "Detalle de la miga del pan de chocolate y naranja",
+        "caption": "Miga tierna y esponjosa, con el color del cacao.",
+        "body": "<p>El secreto está en el contraste: el <strong>amargor suave del cacao</strong> se equilibra con el <strong>dulzor cítrico de la naranja</strong>, sin que ninguno tape al otro. El resultado es un pan goloso pero ligero, perfecto para mojar en el café con leche o disfrutar tal cual.</p>",
+        "points": [
+          { "icon": "cake", "title": "Cacao en la masa", "text": "Cacao amasado dentro del pan, que le da color, aroma y un sabor intenso pero equilibrado." },
+          { "icon": "flower", "title": "Naranja dulce", "text": "Trocitos de naranja repartidos a mano que aportan frescura y un punto cítrico en cada rebanada." }
+        ]
+      },
+      "sweet": {
+        "title": "La mejor forma de disfrutarlo",
+        "body": "Está delicioso recién hecho, pero gana aún más <strong>ligeramente tostado y con un chorrito de aceite de oliva virgen extra</strong>, que realza el aroma de la naranja y el cacao. Ideal para el desayuno, la merienda o para acompañar un buen café.",
+        "imgAlt": "Pan de chocolate y naranja en rebanadas"
+      },
+      "stats": {
+        "title": "¿Sabías que…?",
+        "text": "La unión del <strong>chocolate</strong> y la <strong>naranja</strong> es uno de los maridajes más clásicos de la repostería: el cítrico realza el cacao y rebaja su amargor, por eso funcionan tan bien juntos.",
+        "items": [
+          { "pre": "más de", "num": "12 h", "label": "de fermentación", "sub": "para una miga más ligera" }
+        ]
+      },
+      "cta": { "title": "¿Te apetece probar nuestro pan de chocolate y naranja?", "label": "Haz tu encargo", "href": "contacto.html" }
     }
   }
 }

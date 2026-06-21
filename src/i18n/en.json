@@ -17,6 +17,7 @@
     "santiago": "Tarta de Santiago",
     "larpeira": "Larpeira",
     "tartagallega": "Galician Cake",
+    "panchocolatenaranja": "Chocolate & orange bread",
     "soon": "More coming soon",
     "new": "NEW",
     "menu": "Menu",
@@ -62,6 +63,7 @@
         "eyebrow": "Specialties",
         "title": "Artisan flavours, from our bakehouse to the world.",
         "items": [
+          { "badge": "New", "name": "Chocolate & orange bread", "desc": "Cocoa dough with pieces of sweet orange.", "img": "panchocolatenaranja1", "href": "panchocolatenaranja.html" },
           { "badge": "Unique flavour", "name": "Galician Cake", "desc": "Almond base with local cheese!", "img": "tartagallega4", "href": "tartagallega.html" },
           { "badge": "Galician tradition", "name": "Tarta de Santiago", "desc": "Galician tradition in every bite.", "img": "stg", "href": "tartadesantiago.html" },
           { "badge": "Creamy and handcrafted", "name": "Cheesecake", "desc": "Creamy, smooth and slowly baked.", "img": "queixo_3", "href": "tartadequeso.html" },
@@ -381,6 +383,51 @@
           { "label": "Tarta de Santiago", "href": "tartadesantiago.html" }
         ]
       }
+    },
+    "panchocolatenaranja": {
+      "title": "Chocolate & orange bread | Panadería Ana",
+      "description": "Discover our chocolate and orange bread: an artisan dough with cocoa and pieces of sweet orange, baked in the Panadería Ana workshop.",
+      "pagehead": { "title": "Chocolate & orange bread", "parent": "Specialties", "parentHref": "#" },
+      "history": {
+        "eyebrow": "Our specialty",
+        "title": "Cocoa and orange in every slice",
+        "imgAlt": "Artisan chocolate and orange bread",
+        "body": "<p>Our <strong>chocolate and orange bread</strong> was born from the love of pairing two flavours that understand each other perfectly: <strong>pure cocoa</strong>, kneaded right into the dough, and <strong>pieces of sweet orange</strong> scattered all through the crumb.</p><p>It's neither a sponge cake nor a pastry: it's <strong>real bread</strong>, made with the same dough and the same care as all of our other loaves. With a crisp crust and a tender crumb, the cocoa lends colour and aroma and the orange leaves that fresh, fruity note that surprises you in every bite.</p>"
+      },
+      "craft": {
+        "eyebrow": "The workshop",
+        "title": "The same dough, the same care",
+        "videoAlt": "Making the chocolate and orange bread",
+        "caption": "We knead the cocoa into the dough and shape every loaf by hand.",
+        "body": "<p>The chocolate and orange bread is made <strong>exactly like all of our other breads</strong>: with the same ingredients and the same <strong>long cold fermentation</strong> that develops the flavour, improves keeping and gives a lighter, more digestible crumb.</p><p>The cocoa goes in during kneading so it colours the dough completely, and the <strong>orange pieces</strong> are added at the end, by hand, so they stay whole and evenly spread. The same quality bread as always, just with an indulgent twist.</p>"
+      },
+      "orange": {
+        "headEyebrow": "Two flavours, one bread",
+        "headTitle": "The balance between cocoa and orange",
+        "headSub": "Intense yet never cloying: bread for breakfast, an afternoon snack, or with coffee.",
+        "eyebrow": "Flavour and texture",
+        "title": "Intense, fruity and handcrafted",
+        "imgAlt": "Close-up of the chocolate and orange bread crumb",
+        "caption": "A tender, airy crumb with the colour of cocoa.",
+        "body": "<p>The secret is in the contrast: the <strong>gentle bitterness of the cocoa</strong> is balanced by the <strong>citrus sweetness of the orange</strong>, without one overpowering the other. The result is an indulgent yet light bread, perfect for dunking in a coffee or enjoying just as it is.</p>",
+        "points": [
+          { "icon": "cake", "title": "Cocoa in the dough", "text": "Cocoa kneaded right into the bread, giving it colour, aroma and an intense yet balanced flavour." },
+          { "icon": "flower", "title": "Sweet orange", "text": "Pieces of orange folded in by hand that bring freshness and a citrus note to every slice." }
+        ]
+      },
+      "sweet": {
+        "title": "The best way to enjoy it",
+        "body": "It's delicious freshly baked, but it's even better <strong>lightly toasted with a drizzle of extra virgin olive oil</strong>, which lifts the aroma of the orange and the cocoa. Ideal for breakfast, an afternoon snack, or alongside a good coffee.",
+        "imgAlt": "Sliced chocolate and orange bread"
+      },
+      "stats": {
+        "title": "Did you know…?",
+        "text": "The pairing of <strong>chocolate</strong> and <strong>orange</strong> is one of the great classics of baking: the citrus lifts the cocoa and softens its bitterness, which is why they work so well together.",
+        "items": [
+          { "pre": "over", "num": "12 h", "label": "of fermentation", "sub": "for a lighter crumb" }
+        ]
+      },
+      "cta": { "title": "Fancy trying our chocolate and orange bread?", "label": "Place your order", "href": "contacto.html" }
     }
   }
 }

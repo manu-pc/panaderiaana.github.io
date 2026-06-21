@@ -41,6 +41,9 @@ const rasters = {
   'larpeira_rellena_nata.jpeg': 'larpeira_rellena_nata',
   'megaempanada.jpeg': 'megaempanada',
   'mosaico.webp': 'mosaico',
+  'panchocolatenaranja1.jpeg': 'panchocolatenaranja1',
+  'panchocolatenaranja2.jpeg': 'panchocolatenaranja2',
+  'panchocolatenaranja3.jpeg': 'panchocolatenaranja3',
   'panpasas.jpeg': 'panpasas',
   'pastelchoco_1.jpg': 'pastelchoco_1',
   'pasteles.jpeg': 'pasteles',
@@ -64,6 +67,9 @@ const rasters = {
 };
 
 const gifs = ['larpeira.gif', 'stg.gif', 'josemanuel.gif'];
+// Already-MP4 clips: re-encode to a muted, web-tuned loop + a WebP poster
+// (same output shape as the GIF conversion above).
+const clips = ['panchocolatenaranja.mp4'];
 const passthrough = ['esp.svg', 'eng.svg', 'gal.svg', 'favicon.ico'];
 
 async function optimizeRasters() {
@@ -106,6 +112,31 @@ async function convertGifs() {
   }
 }
 
+async function convertClips() {
+  for (const clip of clips) {
+    const input = path.join(SRC, clip);
+    const base = path.basename(clip, '.mp4');
+    const mp4 = path.join(OUT, `${base}.mp4`);
+    const poster = path.join(OUT, `${base}-poster.webp`);
+
+    // Strip audio, cap width, re-encode H.264 for a lightweight muted loop.
+    await exec('ffmpeg', ['-y', '-i', input,
+      '-movflags', 'faststart',
+      '-pix_fmt', 'yuv420p',
+      '-vf', "scale='min(720,iw)':-2",
+      '-an', '-crf', '28', '-preset', 'slow', mp4]);
+    // Poster: first frame as WebP.
+    const frame = await extractFirstFrame(input);
+    await sharp(frame).resize({ width: 720, withoutEnlargement: true })
+      .webp({ quality: WEBP_QUALITY }).toFile(poster);
+
+    for (const f of [mp4, poster]) {
+      const { size } = await fs.stat(f);
+      console.log(`  video ${path.basename(f)}  (${(size / 1024).toFixed(0)} KB)`);
+    }
+  }
+}
+
 async function extractFirstFrame(input) {
   const tmp = path.join(OUT, '.frame.png');
   await exec('ffmpeg', ['-y', '-i', input, '-vframes', '1', tmp]);
@@ -128,6 +159,8 @@ async function main() {
   await optimizeRasters();
   console.log('Converting GIFs → video →');
   await convertGifs();
+  console.log('Re-encoding MP4 clips →');
+  await convertClips();
   console.log('Copying icons/favicon →');
   await copyPassthrough();
   console.log('Done.');

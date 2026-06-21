@@ -1,0 +1,98 @@
+{% extends "layouts/base.njk" %}
+{% block body %}
+{% include "partials/pagehead.njk" %}
+
+{% set h = content.history %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="feature feature--media-40">
+      <div class="feature__media reveal">
+        <a href="../img/panchocolatenaranja1.webp" data-lightbox data-title="{{ h.imgAlt }}"><img src="../img/panchocolatenaranja1.webp" alt="{{ h.imgAlt }}" loading="lazy"></a>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ h.eyebrow }}</p>
+        <h2>{{ h.title }}</h2>
+        {{ h.body | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set c = content.craft %}
+<section class="section">
+  <div class="container">
+    <div class="feature feature--reverse">
+      <div class="feature__media reveal">
+        <div class="framed">
+          <video src="../img/panchocolatenaranja.mp4" poster="../img/panchocolatenaranja-poster.webp" autoplay muted loop playsinline aria-label="{{ c.videoAlt }}"></video>
+        </div>
+        <p class="feature__caption">{{ c.caption }}</p>
+      </div>
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ c.eyebrow }}</p>
+        <h2>{{ c.title }}</h2>
+        {{ c.body | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set o = content.orange %}
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ o.headEyebrow }}</p>
+      <h2>{{ o.headTitle }}</h2>
+      <p class="muted">{{ o.headSub }}</p>
+    </div>
+    <div class="feature">
+      <div class="feature__body reveal">
+        <p class="eyebrow">{{ o.eyebrow }}</p>
+        <h2>{{ o.title }}</h2>
+        {{ o.body | safe }}
+        {% for pt in o.points %}
+        <div class="point">
+          <span class="point__icon"><svg class="icon" aria-hidden="true"><use href="#i-{{ pt.icon }}"/></svg></span>
+          <span><strong>{{ pt.title }}</strong><br>{{ pt.text }}</span>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="feature__media reveal">
+        <a href="../img/panchocolatenaranja2.webp" data-lightbox data-title="{{ o.imgAlt }}"><img src="../img/panchocolatenaranja2.webp" alt="{{ o.imgAlt }}" loading="lazy" style="aspect-ratio:1/1;object-fit:cover"></a>
+        <p class="feature__caption">{{ o.caption }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set s = content.sweet %}
+<section class="section section--brand center">
+  <div class="container reveal">
+    <h2>{{ s.title }}</h2>
+    <p class="lead measure mx-auto">{{ s.body | safe }}</p>
+    <div style="max-width:520px;margin:2rem auto 0">
+      <img src="../img/panchocolatenaranja3.webp" alt="{{ s.imgAlt }}" loading="lazy" style="border-radius:var(--radius);box-shadow:var(--shadow)">
+    </div>
+  </div>
+</section>
+
+{% set st = content.stats %}
+<section class="section section--alt center">
+  <div class="container reveal">
+    <h2>{{ st.title }}</h2>
+    <p class="lead measure mx-auto">{{ st.text | safe }}</p>
+    <div class="stats" style="margin-top:2rem">
+      {% for it in st.items %}
+      <div><div class="stat__num"><span style="font-size:1.1rem;font-weight:500">{{ it.pre }}</span> {{ it.num }}</div><p>{{ it.label }}</p><p class="muted">{{ it.sub }}</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent center">
+  <div class="container reveal">
+    <h2>{{ content.cta.title }}</h2>
+    <a class="btn btn--light" href="{{ content.cta.href }}">{{ content.cta.label }}</a>
+  </div>
+</section>
+{% endblock %}
